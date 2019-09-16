@@ -1,0 +1,28 @@
+$grey: #e2e0dd
+$dark: #1f1f1f
+$light: #eceae8
+$acent: #779a9e
+
+=flow
+	transition: all 0.25s
+=flow-slow($sec)
+	transition: all $sec
+=placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+=bold
+	font-family: "OpenSansBold"
+=light
+	font-family: "OpenSansLight"
+=regular
+	font-family: "OpenSansRegular"
+=semi
+	font-family: "OpenSansSemiBold";
+=italic
+	font-family: "OpenSansLightItalic"

@@ -1,0 +1,297 @@
+@import "mixins"
+
+body
+	padding: 0
+	margin: 0
+a
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+a:hover
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+a:focus
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+a:visited
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+input, textarea 
+	text-decoration: none
+	outline: none
+	outline-style: none
+	border: none
+button
+	background-color: transparent
+	outline-style: none
+	border: none
+	cursor: pointer
+button:hover
+	background-color: transparent
+	outline-style: none
+button:focus
+	background-color: transparent
+	outline-style: none
+.parallax-container
+	height: 100vh
+	width: 100%
+///Для паралакса внутри блока
+///.parallax-container
+///    height: 100%
+///    width: 100%
+.row-flex 
+	display: flex
+	flex-flow: row wrap
+.no-gutter > [class*='col-']
+	padding-right: 0
+	padding-left: 0
+.clearfix
+	display: block
+	content: ""
+	clear: both
+.left
+	float: left
+.right
+	float: right
+.text-center
+	text-align: center
+.text-left
+	text-align: left
+.text-right
+	text-align: right
+.center-block
+	margin: 0 auto
+section,footer
+	position: relative
+	padding: 65px 0
+	width: 100%
+.mid-btn
+	font-size: 20px
+	color: #fff
+	border: 1px solid #fff
+	padding: 10px 17px
+	letter-spacing: 2px
+a.logo
+	font-size: 23px
+	+probold
+	color: #fff
+p
+	color: $text
+	+light
+	margin: 0
+	font-size: 15px
+	line-height: 2
+h3
+	color: $dark
+	font-size: 30px
+	+light
+	margin: 0
+/*==========  Slick-slider  ==========*/
+.slick-slide
+	outline: none !important
+.slick
+	height: 100%
+	overflow: hidden
+	position: relative
+	width: 100%
+.slick-dotted.slick-slider
+	margin-bottom: 0
+.slick-dots
+	bottom: 10px
+.slick-dots li button:before
+	font-size: 9px
+	color: #bed1d2
+.slick-dots li.slick-active button:before
+	color: #fff
+	+flow
+.slick-prev
+	left: 15px
+.slick-next
+	right: 15px
+/*==========  Header  ==========*/
+header
+	height: 100vh
+	width: 100%
+	.container,.row
+		height: 100%
+	.logo
+		position: absolute
+		left: 50%
+		top: 80px
+		transform: translateX(-50%)
+	h2
+		+bold
+		color: #fff
+		font-size: 57px
+		text-transform: uppercase
+		margin: 0
+	h4
+		color: $grey
+		font-size: 25px
+		+bold
+		text-transform: uppercase
+		margin: 0
+	p
+		+regular
+		font-size: 14px
+		margin: 0
+		color: $grey
+		line-height: 1.5
+/*==========  Gallery  ==========*/
+#gallery
+	.grid-section
+		display: grid
+		grid-template-columns: 300px 180px 370px
+		grid-template-rows: 200px 62px 110px 133px
+		grid-gap: 0
+		margin-top: 65px
+	.grid-item
+		position: relative
+		overflow: hidden
+		&:nth-child(1)
+			background-image: url(../img/gallery-1.jpg)
+			background-position: center center
+			background-size: cover
+			grid-row: 1 / 2
+		&:nth-child(2)
+			background-image: url(../img/gallery-2.jpg)
+			background-position: center center
+			background-size: cover
+			grid-row: 1 / 3
+			grid-column: 2 / 4
+		&:nth-child(3)
+			background-image: url(../img/gallery-3.jpg)
+			background-position: center center
+			background-size: cover
+			grid-row: 2 / 5
+		&:nth-child(4)
+			background-image: url(../img/gallery-4.jpg)
+			background-position: center center
+			background-size: cover
+			grid-row: 3 / 4
+			grid-column: 2 / 3
+		&:nth-child(5)
+			background-image: url(../img/gallery-5.jpg)
+			background-position: center center
+			background-size: cover
+			grid-row: 3 / 5
+			grid-column: 3 / 4
+		&:nth-child(6)
+			background-image: url(../img/gallery-6.jpg)
+			background-position: center center
+			background-size: cover
+			grid-row: 4 / 5
+			grid-column: 2 / 3
+		span
+			position: absolute
+			display: flex
+			justify-content: center
+			align-items: center
+			top: -100%
+			height: 100%
+			width: 100%
+			background-color: #111
+			opacity: .8
+			+flow-ext(.5s)
+			p
+				color: #fff
+		&:hover span
+			+flow-ext(.5s)
+			top: 0
+	.aside
+		background-image: url("../img/gallery-7.jpg")
+		background-position: center center
+		background-size: cover
+		position: absolute
+		display: flex
+		overflow: hidden
+		top: -140px
+		bottom: 0
+		max-width: 255px
+		width: 100%
+		.mid-btn
+			margin-top: 20px
+			&:hover
+				color: pink
+				border: 1px solid pink
+				+flow
+		span
+			display: flex
+			position: absolute
+			justify-content: center
+			align-content: center
+			right: -100%
+			flex-wrap: wrap;
+			height: 100%
+			width: 100%
+			padding: 20px
+			background-color: #111
+			opacity: .8
+			+flow-ext(.5s)
+			p
+				color: #fff
+		&:hover span
+			+flow-ext(.5s)
+			right: 0
+/*==========  Title  ==========*/
+#title
+	height: 325px
+	padding: 0
+	.container,.row
+		height: 100%
+	p
+		color: #fff
+		margin: 10px 0
+/*==========  Statistics  ==========*/
+#statistics
+	.stats
+		background-color: $lighten
+		margin: 25px 0 65px
+		padding: 15px 0
+		h4
+			font-size: 28px
+			+medium
+			color: #000
+			margin: 0
+		p
+			+regular
+			font-size: 17px
+/*==========  Footer  ==========*/
+footer
+	.container,.row
+		height: 100%
+	p
+		color: #fff
+		margin: 10px 0
+	iframe
+		width: 100%
+		height: 100%
+		z-index: 0
+	.mask
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background-color: $black
+		z-index: 100
+	.overlay
+		margin: 90px auto
+		display: inline-block
+		width: 100%
+		height: 410px
+		z-index: 100
+		position: relative
+	&.parallax-container
+		height: auto

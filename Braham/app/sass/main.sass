@@ -1,0 +1,399 @@
+@import "mixins"
+
+body
+	margin: 0
+	width: 100%
+	height: 100%
+a
+	text-decoration: none
+	outline: none
+	outline-style: none
+	cursor: pointer
+a:hover
+	text-decoration: none
+	outline: none
+	outline-style: none
+a:focus
+	text-decoration: none
+	outline: none
+	outline-style: none
+a:visited
+	text-decoration: none
+	outline: none
+	outline-style: none
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+input, textarea 
+	text-decoration: none
+	outline: none
+	outline-style: none
+	border: none
+button
+	background-color: transparent
+	outline-style: none
+	border: none
+button:hover
+	background-color: transparent
+	outline-style: none
+button:focus
+	background-color: transparent
+	outline-style: none
+.parallax-container
+	height: 100%
+	width: 100%
+.clearfix
+	display: block
+	content: ""
+	clear: both
+.flex-container
+	display: flex
+.flex-items
+	display: flex
+.text-center
+	text-align: center
+.left
+	float: left
+.right
+	float: right
+section
+	padding: 60px 0
+	width: 100%
+h3
+	text-align: center
+	font-size: 37px
+	+regular
+	color: $dark
+	text-transform: uppercase
+	line-height: 0.615
+	letter-spacing: 13px
+h5
+	font-size: 16px
+	text-align: center
+	+light
+	color: #7e7e7e
+	margin: 0
+	text-transform: uppercase
+	line-height: 1.5
+	margin-bottom: 30px
+p
+	font-size: 14px
+	+regular
+	color: $dark
+/*==========  Owl-carousel  ==========*/
+.owl-next, .owl-prev
+	&:hover
+		background: transparent !important
+.owl-nav
+	padding: 10px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+.owl-nav i
+	font-size: 25px
+	padding: 5px
+	color: #bebebe
+/*==========  Slick-slider  ==========*/
+.slick-slide
+	outline: none !important
+.slick
+	height: 100%
+	overflow: hidden
+	position: relative
+	width: 100%
+.slick-dotted.slick-slider
+	margin-bottom: 0
+.slick-dots
+	bottom: 10px
+.slick-dots li button:before
+	font-size: 9px
+	color: #bed1d2
+.slick-dots li.slick-active button:before
+	color: #fff
+	+flow
+.slick-prev
+	left: 15px
+.slick-next
+	right: 15px
+/*==========  Header  ==========*/
+header
+	background-color: $dark
+	height: 100vh
+	position: relative
+	.row
+		height: 100%
+	.left-side
+		height: 100%
+		width: 100%
+		background-image: url(../img/top-bg.jpg)
+		background-position: center right
+		background-size: cover
+	.main
+		padding: 32px 80px
+		height: 100%
+		display: flex
+		flex-direction: column
+		position: relative
+		justify-content: space-around
+	.flex-items
+		&:nth-child(2)
+			flex-direction: column
+	h4
+		+light
+		font-size: 40px
+		margin: 0
+		color: $light
+		&:nth-child(2)
+			+bold
+			font-size: 29px
+			text-transform: uppercase
+			margin-top: 15px
+	ul
+		padding: 0
+	li
+		list-style: none
+		a
+			font-size: 16px
+			display: inline-block
+			+light
+			color: $light
+			padding: 9px 0px
+			+flow
+			&:hover
+				color: $acent
+				+flow
+/*==========  Services  ==========*/
+#services
+	background-color: $light
+	h4
+		font-size: 37px
+		+regular
+		color: $dark
+		text-transform: uppercase
+		text-align: center
+		max-width: 71%
+		margin: 0 auto
+	.cards
+		display: flex
+		flex-direction: column
+		padding: 15px 10px
+		+flow
+		&:hover
+			box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2)
+			+flow
+	span
+		height: 182px
+		width: 182px
+		background-color: $grey
+		display: flex
+		align-content: center
+		justify-content: center
+		align-self: center
+		border-radius: 50%
+		margin: 6px 0
+		img
+			align-self: center
+	a
+		border: 8px solid $grey
+		width: auto
+		align-self: center
+		font-size: 16px
+		+bold
+		color: $dark
+		text-transform: uppercase
+		padding: 12px 20px
+		margin: 6px 0
+		text-shadow: none
+		+flow
+		&:hover
+			+flow
+			background-color: $grey
+			color: $light
+			text-shadow: 1px 1px 1px $dark
+/*==========  Articles  ==========*/
+#articles
+	background-color: $grey
+	.review
+		display: flex
+		flex-flow: column wrap
+		justify-content: space-around
+		height: 100%
+	.flex-items
+		&:first-child
+			flex-direction: column
+		&:last-child
+			align-self: flex-end
+	h4
+		margin: 0
+		line-height: 24px
+		color: $dark
+		text-transform: uppercase
+		font-size: 18px
+		+semi
+	.owl-more
+		cursor: pointer
+	#owl-arts-1,#owl-arts-2
+		margin: 33px 0
+	.more
+		padding: 5px
+	i
+		color: $dark
+		font-size: 23px
+	small
+		font-size: 14px
+		line-height: 24px
+		color: $dark
+		+italic
+/*==========  About  ==========*/
+#about
+	background-color: #27344c
+	opacity: 0.65
+	display: inline-block
+	h3,h5
+		color: $light
+	h4
+		font-size: 24px
+		+semi
+		text-transform: uppercase
+		color: $light
+		margin-left: 18px
+	img
+		align-self: center
+	.ticket
+		display: flex
+		padding: 10px 0
+		height: 100%
+	.col-md-6:nth-child(even) .ticket
+		flex-direction: row-reverse
+	.stats
+		background-color: #959aa3
+		opacity: 0.56
+		height: 40px
+		align-self: center
+	.col-md-6:nth-child(2) .stats
+		width: 372px
+	.col-md-6:nth-child(4) .stats
+		width: 189px
+	.col-md-6:nth-child(6) .stats
+		width: 313px
+/*==========  Clients  ==========*/
+#clients
+	background-color: $light
+	.owl-carousel .owl-stage-outer
+		padding: 35px 0px
+		border-top: 1px solid #dbdbdb
+		border-bottom: 1px solid #dbdbdb
+/*==========  Contacts  ==========*/
+#contacts
+	background-color: rgba(34, 34, 34, 0.6)
+	padding: 65px 0
+	p
+		+light
+		font-size: 18px
+		color: $light
+		margin: 0
+		line-height: 1.3
+	.flex-container
+		height: 100%
+		display: flex
+		justify-content: space-around
+		flex-direction: column
+	.flex-items
+		flex-direction: column
+	.contacts-links
+		display: flex
+		a
+			border-radius: 50%
+			border: 2px solid $light
+			height: 35px
+			width: 35px
+			line-height: 34px
+			text-align: center
+			display: inline-block
+			margin-right: 15px
+			+flow
+			&:hover
+				border: 2px solid $acent
+				+flow
+				i
+					color: $acent
+					+flow
+		i
+			color: $light
+			font-size: 18px
+	form
+		display: flex
+		flex-direction: column
+		input,textarea
+			display: inline-block
+			padding: 12px 15px
+			+regular
+			color: #6a6868
+			font-size: 14px
+			+placeholder
+				+regular
+				color: #6a6868
+				font-size: 14px
+				text-transform: uppercase
+				display: inline-block
+				+flow
+			&:focus
+				+placeholder
+					color: transparent
+					+flow
+		input
+			width: 350px
+			padding: 27px 15px
+		textarea
+			resize: none
+			height: 116px
+			padding: 27px 15px
+			width: 435px
+	.form-group
+		margin-bottom: 15px
+	.send
+		background-color: $acent
+		align-self: flex-end
+		text-transform: uppercase
+		font-size: 24px
+		padding: 15px
+		+bold
+		color: $light
+		+flow
+		&:hover
+			background-color: darken($acent, 10%)
+			+flow
+			box-shadow: inset 0 5px 50px rgba(0,0,0,.2)
+/*==========  Footer  ==========*/
+footer
+	background-color: #191919
+	display: flex
+	height: 82px
+	.row
+		height: 100%
+	.flex-container
+		height: 100%
+		align-items: center
+		justify-content: space-between
+	.top
+		font-size: 32px
+		color: $light
+		padding: 5px
+	ul
+		list-style: none
+		padding: 0
+		align-content: center
+		display: inline-block
+	li
+		display: inline-block
+		a
+			padding: 5px 10px
+			font-size: 16px
+			display: inline-block
+			+light
+			color: $light
+			+flow
+			&:hover
+				color: $acent
+				+flow

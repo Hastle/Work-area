@@ -1,0 +1,451 @@
+@import "mixins"
+
+a
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+a:hover
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+a:focus
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+a:visited
+	text-decoration: none
+	outline: none
+	outline-style: none
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+input, textarea 
+	text-decoration: none
+	outline: none
+	outline-style: none
+	border: none
+button
+	background-color: transparent
+	outline-style: none
+	border: none
+button:hover
+	background-color: transparent
+	outline-style: none
+button:focus
+	background-color: transparent
+	outline-style: none
+.parallax-container
+	height: 100vh
+	width: 100%
+.no-gutter > [class*='col-']
+	padding-right: 0
+	padding-left: 0
+.left
+	float: left
+.right
+	float: right
+.grid
+	display: grid
+
+section
+	display: inline-block
+	width: 100%
+	padding: 60px 0
+a.common-btn
+	text-align: center
+	display: inline-block
+	padding: 25px 75px
+	border: 2px solid  #fff
+	text-transform: uppercase
+	color: #fff
+	font-size: 15px
+	+regular
+p
+	font-size: 16px
+	+sans
+	span
+		font-weight: 600
+h1
+	font-size: 60px
+	+sans
+	margin: 30px 0
+h3
+	font-size: 25px
+	margin: 0
+	+sans
+h4
+	font-size: 18px
+	color: #000
+	+sans
+	text-transform: uppercase
+	text-align: center
+.grid-section
+	display: grid
+	grid-template-columns: repeat(5, 1fr)
+	grid-auto-rows: 200px
+	grid-gap: 18px
+	margin-top: 60px
+.title
+	position: absolute
+	top: 25px
+	left: 25px
+	font-size: 25px
+	width: 100px
+	+sans
+	.dolar
+		display: inline-block
+		margin-top: 10px
+		float: left
+.add
+	display: grid
+	align-content: center
+	padding: 0
+	width: 50px
+	height: 50px
+	border-radius: 25px
+	position: absolute
+	left: 20px
+	bottom: 20px
+	background-color: #fff
+	border: 1px solid $grey
+	cursor: pointer
+	&:hover
+		+low-shadow
+		+flow
+	i
+		color: $gold
+		font-size: 15px
+.cards
+	display: grid
+	position: relative
+	padding: 40px
+	background-color: $ligth
+	border: 1px solid  $grey
+	border-radius: 10px
+	align-content: center
+	justify-content: center
+	img
+		max-height: 150px
+	&:hover
+		background-color: #fff
+		+flow
+		+mid-shadow
+/*==========  Header  ==========*/
+header
+	height: 100vh
+	display: block
+	position: relative
+	padding: 0 100px
+	h1
+		color: #000
+		margin: 0
+	h3
+		color: $gold
+		+regular
+		text-transform: uppercase
+	a.common-btn
+		margin-top: 69px
+		border-color: $gold
+		color: $gold
+		position: relative
+		&:hover
+			background-color: $gold
+			color: #e4e4e4
+			+flow
+	.top-menu
+		padding: 10px 0
+		display: inline-block
+		width: 100%
+		border-bottom: 1px solid  #c7c7c7
+	.logo
+		display: inline-block
+	.recipe
+		display: inline-block
+		height: 266px
+		position: relative
+		top: 50%
+		margin-top: -133px
+/*==========  Party  ==========*/
+#party
+	.cards
+		&:nth-child(1)
+			grid-column: 1 / 3
+			grid-row: 1 / 3
+			justify-content: end
+			img
+				max-height: 100%
+		&:nth-child(5)
+			grid-column: 3 / 5
+			grid-row: 2 / 4
+			background-image: url(../img/product-5.jpg)
+			background-position: center center
+			background-size: cover
+			border: none
+			.title
+				width: 120px
+		&:nth-child(6)
+			grid-row: 2 / 4
+			justify-content: end
+			align-content: end
+			padding-bottom: 0
+			img
+				max-height: 100%
+/*==========  Kings  ==========*/
+#kings
+	height: 250px
+	padding: 0
+	display: grid
+	align-content: center
+	h1
+		margin: 0
+		color: $grey
+/*==========  Party p.2  ==========*/
+
+#party-2
+	.grid-section
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+	.cards
+		&:nth-child(1)
+			grid-column: 1 / 3
+			grid-row: 1 / 3
+			background-image: url(../img/product-9.jpg)
+			background-position: center center
+			background-size: cover
+			.title
+				width: auto
+				text-align: left
+		&:nth-child(2)
+			.title
+				width: auto
+				position: absolute
+				display: inline-block
+				text-align: left
+		&:nth-child(8)
+			grid-column: 3 / 5
+			grid-row: 3 / 5
+			background-image: url(../img/product-16.jpg)
+			background-position: center center
+			background-size: cover
+			.title
+				width: auto
+				text-align: left
+/*==========  Bullets  ==========*/
+#bullets
+	background-color: $ligth
+	.ticket
+		display: inline-block
+		width: 100%
+		&:hover
+			+bottom-shadow
+			+flow
+		p span
+			font-weight: 600
+		img
+			margin: 40px 0
+	h1
+		color: $gold
+		margin: 0 0 60px
+/*==========  Party p.3  ==========*/
+
+#party-3
+	.grid-section
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+/*==========  Bottura  ==========*/
+#bottura
+	height: 525px
+	padding: 0
+	display: grid
+	align-content: center
+	+latter-shadow
+	h1
+		margin: 0
+		color: $grey
+	a.common-btn
+		color: $grey
+		border: 1px solid $grey
+		margin-top: 50px
+		&:hover
+			background-color: $grey
+			+flow
+			color: #000
+/*==========  Blog  ==========*/
+
+#blog
+	.unit
+		background-color: $ligth
+		border: 1px solid $grey
+		img		
+			width: 100%
+		.gutter
+			padding: 18px
+		p
+			margin: 0
+			span
+				margin: 5px 0
+				display: block
+				&:hover
+					text-decoration: underline
+					+flow
+					cursor: pointer
+/*==========  Contacts  ==========*/
+#contacts
+	display: block
+	background-image: url(../img/contacts-bg.jpg)
+	background-position: center center
+	background-size: cover
+	h1
+		color: $ligth
+		margin: 0
+		+latter-shadow
+	.feed-data
+		display: inline-block
+		margin-top: 60px
+		margin-bottom: 60px
+		p
+			display: inline-block
+			font-weight: 600
+			width: 100%
+			font-size: 19px
+			color: $ligth
+			+latter-shadow
+			&:last-child
+				text-transform: uppercase
+		i
+			font-size: 25px
+			margin-right: 10px
+	.soc-links
+		display: inline-block
+		a
+			display: inline-block
+			position: relative
+			background-color: $gold
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			margin: 0 9px
+			text-align: center
+			&:hover
+				background-color: $grey
+				+flow
+				i
+					color: $dark
+		i
+			font-size: 25px
+			margin-top: 8px
+			color: $ligth
+			+latter-shadow
+	#feedback
+		background-color: #fff
+		padding: 30px
+		box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.25)
+		input,textarea
+			width: 100%
+			border: 1px solid $greyish
+			border-radius: 5px
+			padding: 15px
+			resize: none
+		.contact-btn
+			background-color: transparent
+			border: 2px solid $gold
+			color: $gold
+			text-transform: uppercase
+			font-size: 15px
+			padding: 16px 80px
+			font-weight: bold
+			&:hover
+				background-color: $gold
+				color: #fff
+				+latter-shadow
+				+flow
+/*==========  Magnific Popup  ==========*/
+.white-popup-block
+	background: #FFF
+	padding: 50px
+	text-align: left
+	max-width: 650px
+	margin: 40px auto
+	position: relative
+	h1
+		+sans
+		margin: 30px 0
+		font-size: 30px
+	img
+		margin-top: 1em
+.mfp-fade.mfp-bg
+	opacity: 0
+	-webkit-transition: all 0.35s ease-out
+	-moz-transition: all 0.35s ease-out
+	transition: all 0.35s ease-out
+.mfp-fade.mfp-bg.mfp-ready
+	opacity: 0.8
+.mfp-fade.mfp-bg.mfp-removing
+	opacity: 0
+.mfp-fade.mfp-wrap .mfp-content
+	opacity: 0
+
+	-webkit-transition: all 0.35s ease-out
+	-moz-transition: all 0.35s ease-out
+	transition: all 0.35s ease-out
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+	opacity: 1
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+	opacity: 0
+.mfp-ready .mfp-figure
+	opacity: 0
+.mfp-zoom-in
+	.mfp-figure, .mfp-iframe-holder .mfp-iframe-scaler
+		opacity: 0
+		transition: all 0.3s ease-out
+		transform: scale(0.95)
+	&.mfp-bg, .mfp-preloader
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-image-loaded .mfp-figure
+		opacity: 1
+		transform: scale(1)
+	&.mfp-ready
+		.mfp-iframe-holder .mfp-iframe-scaler
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg, .mfp-preloader
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-figure, .mfp-iframe-holder .mfp-iframe-scaler
+			transform: scale(0.95)
+			opacity: 0
+		&.mfp-bg, .mfp-preloader
+			opacity: 0
+
+.mfp-iframe-scaler
+	overflow: visible
+.mfp-zoom-out-cur
+	cursor: auto
+	.mfp-image-holder .mfp-close
+		cursor: pointer
+.mfp-preloader
+	width: 30px
+	height: 30px
+	background-color: #FFF
+	opacity: 0.65
+	margin: 0 auto
+	animation: rotateplane 1.2s infinite ease-in-out
+@-webkit-keyframes rotateplane
+	0%
+		-webkit-transform: perspective(120px)
+	50%
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	100%
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+@keyframes rotateplane
+	0%
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	50%
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	100%
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)

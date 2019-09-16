@@ -1,0 +1,50 @@
+@media only screen and (max-width:1200px){
+#bullets .cards{padding:20px;}
+#bullets .cards:nth-child(1){margin-top:0;}
+#bullets .cards:nth-child(3){margin-bottom:0;}
+h4{padding:0;margin:0;}
+}
+@media only screen and (max-width:992px){
+#bullets .cards{padding:30px;}
+}
+@media only screen and (max-width:768px){
+body{padding:0;}
+section{padding:50px 0;}
+header{height:100vh;}
+.parallax-container{width:100%;height:100vh;}
+#advantages .ticket{padding:10px 0px;}
+#works img{height:auto;}
+#works .container li {margin-bottom:10px;}
+#slider{border: none;}
+#slider #myCarousel .carousel-caption{height: 70vh;}
+#slider #myCarousel .item > img {height:70vh;}
+#slider #myCarousel .carousel-caption .context{width:100%;margin-left:-50%;padding:0 15px;}
+#slider #myCarousel .carousel-indicators {bottom:10%;}
+#slider #myCarousel .carousel-caption img {top:10%;}
+#slider #myCarousel ol{margin-top:0;margin-bottom:0;bottom:10%;}
+#about{text-align:center;}
+#news .plate .discr{margin-bottom:20px;}
+#contacts [class*='col-']{padding-right:0;padding-left:0;}
+#skills [class*='col-']{padding-right:0;padding-left:0;}
+}
+@media only screen and (max-width:480px){
+#works [class*='col-']{padding-right:0;padding-left:0;}
+#news [class*='col-']{padding-right:0;padding-left:0;}
+#works img {max-width: 100%;}
+#works .container {padding:0 15px;}
+#bullets .cards{padding:20px 0;}
+.toggleMenu:before{display: none;}
+.toggleMenu{right:19px;height: 70px;width: 70px;}
+.sandwich{margin-top:28px;}
+.px1,.px2{display:none;}
+#works ul li{padding:0 7px;}
+h3{margin:20px 0;}
+}
+@media only screen and (max-width:320px){}
+@media only screen and (min-width:320px){}
+@media only screen and (min-width:480px){}
+@media only screen and (min-width:768px){}
+@media only screen and (min-width:992px){}
+@media only screen and (min-width:1200px){
+#works{min-height:972px;}
+}

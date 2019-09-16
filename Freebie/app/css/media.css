@@ -1,0 +1,145 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	h1 {
+		font-size: 37px;
+	}
+	section {
+		padding: 30px 0;
+	}
+	header {
+		padding: 0 30px;
+	}
+	header .recipe {
+		height: auto;
+		width: 100%;
+		margin-top: -50%;
+		text-align: center;
+	}
+	header a.common-btn {
+		background-color: #cc9900;
+		color: #222;
+		font-weight: 600;
+	}
+	header a.common-btn:hover {
+		background-color: #222;
+		border-color: #222;
+		color: #cc9900;
+	}
+	#bullets h1 {
+		margin-bottom: 15px;
+	}
+	.grid-section {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#party .cards:nth-child(1) {
+		grid-column: 1 / 2;
+		grid-row: 1 / 3;
+	}
+	#party .cards:nth-child(5) {
+		grid-column: 1 / 3;
+		grid-row: initial;
+	}
+	#party .cards:nth-child(6) {
+		grid-column: 1 / 2;
+		grid-row: initial;
+	}
+	#party .cards:nth-child(7) {
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+	}
+	#kings {
+		height: 40vh;
+		text-align: center;
+	}
+	#party-2 .grid-section {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#party-2 .cards:nth-child(1) {
+		grid-column: 1 / 3;
+		grid-row: 1 / 2;
+	}
+	#party-2 .cards:nth-child(2) {
+		grid-column: 1 / 2;
+	}
+	#party-2 .cards:nth-child(8) {
+		grid-column: 1 / 3;
+		grid-row: 4 / 5;
+	}
+	#party-3 .grid-section {
+		grid-template-columns: repeat(2, 1fr)
+	}
+	#bottura {
+		text-align: center;
+	}
+	#blog .unit {
+		margin-top: 15px;
+	}
+	#contacts .feed-data {
+		margin: 30px 0 0;
+	}
+	#contacts .soc-links {
+		width: 100%;
+		text-align: center;
+		margin: 15px 0;
+	}
+	#contacts h1 {
+		text-align: center;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+#contacts #feedback-1 {
+	padding: 20px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 321px) {
+	header .recipe {
+		top: 40%;
+	}
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+::-webkit-scrollbar {
+	display: inline-block !important;
+	z-index: 10000 !important;
+}

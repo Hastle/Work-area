@@ -1,0 +1,50 @@
+@font-face {
+	font-family: "ACLineRegular";
+	src: url("../fonts/ACLineRegular/ACLineRegular.eot");
+	src: url("../fonts/ACLineRegular/ACLineRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ACLineRegular/ACLineRegular.woff") format("woff"),
+	url("../fonts/ACLineRegular/ACLineRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+<<<<<<< HEAD
+}
+@font-face {
+	font-family: "ProximaNovaRegular";
+	src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+	src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+	url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ProximaNovaBold";
+	src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+	src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+	url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ProximaNovaBlack";
+	src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
+	src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"),
+	url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RalewayExtraLight";
+	src: url("../fonts/RalewayExtraLight/RalewayExtraLight.eot");
+	src: url("../fonts/RalewayExtraLight/RalewayExtraLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RalewayExtraLight/RalewayExtraLight.woff") format("woff"),
+	url("../fonts/RalewayExtraLight/RalewayExtraLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+=======
+>>>>>>> f3bc15346c45389546b34e1c0a1923ca5a96155f
+}

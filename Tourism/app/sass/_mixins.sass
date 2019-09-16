@@ -1,0 +1,32 @@
+$grey: #b7b7b7
+$dark: #444444
+$black: #2c2c2c
+$text: #8d8d8d
+$light: #e1e1de
+$lighten: #f5f5f5
+
+=flow
+	transition: all .25s
+=flow-ext($sec)
+	transition: all $sec
+=ease
+	transition-timing-function: ease-in
+=placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+=bold
+	font-family: "RobotoBold"
+=light
+	font-family: "RobotoLight"
+=regular
+	font-family: "RobotoRegular"
+=medium
+	font-family: "RobotoMedium"
+=probold
+	font-family: "SourceSansProBold"

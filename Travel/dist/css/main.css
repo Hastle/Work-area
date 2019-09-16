@@ -1,0 +1,362 @@
+a {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000; }
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: inherit; }
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+  outline-style: none; }
+
+a:visited {
+  text-decoration: none;
+  outline: none;
+  outline-style: none; }
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+input, textarea {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  border: none; }
+
+button {
+  background-color: transparent;
+  outline-style: none;
+  border: none; }
+
+button:hover {
+  background-color: transparent;
+  outline-style: none; }
+
+button:focus {
+  background-color: transparent;
+  outline-style: none; }
+
+.parallax-container {
+  height: 500px;
+  width: 100%; }
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
+.row-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+section {
+  display: block;
+  padding: 100px 0; }
+
+h2 {
+  font-size: 62px;
+  font-family: "UTMAvo";
+  text-transform: uppercase;
+  margin: 50px 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+
+h3 {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #59c45a;
+  font-family: "UTMAvo";
+  text-align: center;
+  margin: 0; }
+  h3:after {
+    content: url(../img/line.png);
+    display: block;
+    margin-top: 14px; }
+
+h5 {
+  font-size: 15px;
+  font-family: "LatoRegular";
+  color: #3c3c3c; }
+
+p {
+  font-size: 14px;
+  color: #959595;
+  font-family: "ArialRegular"; }
+
+.action {
+  color: #fff;
+  background-color: #59c45a;
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "LatoBold";
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 35px 0px rgba(89, 196, 90, 0.65);
+          box-shadow: 0px 0px 35px 0px rgba(89, 196, 90, 0.65);
+  padding: 20px 45px;
+  border: 3px transparent solid; }
+  .action:hover {
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    background-color: #fff;
+    color: #59c45a;
+    border: 3px #59c45a solid; }
+
+/*==========  Slick-slider  ==========*/
+.slick-slide {
+  outline: none !important; }
+
+.slick {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0; }
+
+.slick-dots {
+  bottom: 10px; }
+
+.slick-dots li button:before {
+  font-size: 9px;
+  color: #bed1d2; }
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s; }
+
+.slick-prev {
+  left: 15px; }
+
+.slick-next {
+  right: 15px; }
+
+/*==========  Header  ==========*/
+header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: block;
+  color: #fff; }
+  header .descr {
+    width: 100%;
+    padding: 0 200px;
+    margin: 0 auto; }
+    header .descr p {
+      color: #fff;
+      font-size: 22px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+    header .descr .action {
+      margin-top: 80px; }
+  header .img-item {
+    background-position: center center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    height: 100vh;
+    display: grid !important;
+    position: relative;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    text-align: center; }
+  header .img-1 {
+    background-image: url(../img/bg-top-1.jpg); }
+  header .img-2 {
+    background-image: url(../img/bg-top-2.jpg); }
+  header .img-3 {
+    background-image: url(../img/bg-top-3.jpg); }
+
+/*==========  Favorable  ==========*/
+#favorable h5 {
+  margin: 0; }
+
+#favorable .row-flex {
+  margin-top: 50px; }
+
+#favorable .ticket {
+  padding: 10px 0; }
+  #favorable .ticket img {
+    width: 100%; }
+
+/*==========  Service  ==========*/
+#service {
+  padding: 0; }
+  #service .advice {
+    background-color: #efeeee;
+    display: inline-block;
+    padding: 50px 70px; }
+  #service .card {
+    padding: 7px 15px; }
+  #service .slick, #service .draggable, #service .slick-track {
+    height: 100% !important; }
+
+/*==========  Tours  ==========*/
+#tours .row {
+  margin-top: 60px; }
+
+#tours .action {
+  margin-top: 50px;
+  border: 3px transparent solid; }
+  #tours .action:hover {
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    background-color: #fff;
+    color: #59c45a;
+    border: 3px #59c45a solid; }
+
+#tours .overlay {
+  display: inline-block;
+  position: relative;
+  overflow: hidden; }
+  #tours .overlay img {
+    height: auto; }
+  #tours .overlay .review {
+    position: absolute;
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+  #tours .overlay:hover .review {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    top: 0;
+    opacity: 1;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s; }
+
+#tours .col-md-3 {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+/*==========  Contacts  ==========*/
+#contacts {
+  background-color: #efeeee; }
+  #contacts h3 {
+    color: #959595; }
+    #contacts h3:after {
+      display: none; }
+  #contacts .enter {
+    display: inline-block;
+    border: 1px solid #c9c9c9;
+    margin-top: 60px; }
+  #contacts .info {
+    padding: 40px 30px;
+    border-right: 1px solid #c9c9c9; }
+  #contacts .pull {
+    display: inline-block; }
+    #contacts .pull i {
+      color: #ed7e01;
+      margin-right: 10px; }
+  #contacts .soc-links {
+    padding: 15px 0; }
+    #contacts .soc-links a {
+      background-color: #c9c9c9;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      display: inline-grid;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      -webkit-align-content: center;
+          -ms-flex-line-pack: center;
+              align-content: center;
+      margin: 0 5px; }
+    #contacts .soc-links i {
+      font-size: 30px;
+      color: #fff; }
+  #contacts form {
+    display: inline-block;
+    width: 100%;
+    padding: 35px 20px;
+    text-align: center; }
+    #contacts form i {
+      margin-left: 30px; }
+    #contacts form .action {
+      margin-top: 25px; }
+    #contacts form .form-ent, #contacts form textarea {
+      display: inline-block;
+      color: #959595;
+      width: 100%;
+      padding: 15px 10px;
+      resize: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #c9c9c9; }
+      #contacts form .form-ent::-webkit-input-placeholder, #contacts form textarea::-webkit-input-placeholder {
+        font-family: "LatoRegular";
+        font-size: 14px;
+        color: #959595; }
+      #contacts form .form-ent:-moz-placeholder, #contacts form textarea:-moz-placeholder {
+        font-family: "LatoRegular";
+        font-size: 14px;
+        color: #959595; }
+      #contacts form .form-ent::-moz-placeholder, #contacts form textarea::-moz-placeholder {
+        font-family: "LatoRegular";
+        font-size: 14px;
+        color: #959595; }
+      #contacts form .form-ent:-ms-input-placeholder, #contacts form textarea:-ms-input-placeholder {
+        font-family: "LatoRegular";
+        font-size: 14px;
+        color: #959595; }
+      #contacts form .form-ent:focus, #contacts form textarea:focus {
+        border: 1px solid #c9c9c9;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        #contacts form .form-ent:focus::-webkit-input-placeholder, #contacts form textarea:focus::-webkit-input-placeholder {
+          color: transparent;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        #contacts form .form-ent:focus:-moz-placeholder, #contacts form textarea:focus:-moz-placeholder {
+          color: transparent;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        #contacts form .form-ent:focus::-moz-placeholder, #contacts form textarea:focus::-moz-placeholder {
+          color: transparent;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        #contacts form .form-ent:focus:-ms-input-placeholder, #contacts form textarea:focus:-ms-input-placeholder {
+          color: transparent;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+    #contacts form textarea {
+      height: 140px; }

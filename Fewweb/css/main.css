@@ -1,0 +1,292 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000;
+}
+
+a:visited {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: transparent;
+  outline-style: none;
+  border: none;
+}
+
+button:hover {
+  background-color: transparent;
+  outline-style: none;
+}
+
+button:focus {
+  background-color: transparent;
+  outline-style: none;
+}
+
+button.more {
+  font-size: 13px;
+  padding: 20px 53px;
+  margin-top: 10px;
+  display: block;
+  display: inline-block;
+}
+
+section {
+  display: block;
+  position: relative;
+  padding: 70px 0;
+  width: 100%;
+  background-color: #0f0f0f;
+}
+
+.parallax-container {
+  height: 500px;
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 50px;
+  font-family: "ACLineRegular";
+}
+p {
+  font-family: "ProximaNovaRegular";
+  color: #87949e;
+}
+.strip {
+  padding: 32px 0;
+  margin: 0 auto;
+}
+.strip {
+  padding: 32px 0;
+}
+/*==========  home  ==========*/
+#home {
+  height: 100vh;
+  padding: 0;
+}
+#home #myCarousel .item > img {
+  height: 100vh;
+  width: 100%;
+}
+#home .review {
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  top: 40%;
+  color: #fff;
+}
+#home .review h3 {
+  font-family: "ACLineRegular";
+  font-size: 50px;
+}
+#home .review h4 {
+  font-family: "ACLineRegular";
+  text-transform: uppercase;
+  font-size: 25px;
+}
+#home .review .limit {
+  padding: 10px 0;
+  background-color: #222;
+  opacity: 0.5;
+}
+#home .review button.trangle {
+  background: transparent;
+  border: none;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: "ACLineRegular";
+  height: 40px;
+  position: relative;
+  margin: 34px 0;
+  display: inline-block;
+}
+#home .review button.trangle:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 28px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  position: absolute;
+  left: -15px;
+  top: 5px;
+  transform: rotate(-45deg);
+}
+#home .review button.trangle:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 28px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  position: absolute;
+  right: -15px;
+  top: 5px;
+  transform: rotate(45deg);
+}
+#home .carousel-indicators li {
+  margin: 0 2px;
+  border-radius: 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/*==========  header  ==========*/
+header {
+  display: block;
+  background-color: #0b0b0b;
+  width: 100%;
+}
+header .logo {
+  float: left;
+}
+header .logo h2 {
+  color: #fff;
+  font-size: 50px;
+  margin: 0;
+}
+header .top-links {
+  float: right;
+  overflow: hidden;
+}
+header .top-links ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+header .top-links li {
+  display: inline-block;
+  font-size: 22px;
+}
+header .top-links li a {
+  display: inline-block;
+  color: #fff;
+  font-family: "ACLineRegular";
+  padding: 20px 40px;
+}
+header .top-links li a:hover {
+  text-decoration: underline;
+}
+/*==========  about  ==========*/
+#about p, #about h4 {
+  text-align: center;
+}
+#about p {
+  color: #727d85;
+}
+#about h4 {
+  color: #cdcdcd;
+}
+#about .promo {
+  margin: 50px auto;
+  padding: 85px;
+  background-color: #edeff1;
+  border-radius: 100px;
+  width: 183px;
+}
+#about .cards:hover .promo {
+  background-color: #222;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+/*==========  portfolio  ==========*/
+#portfolio .articles {
+  padding: 70px 0 0;
+  display: inline-block;
+}
+#portfolio .articles p {
+  text-indent: 20px;
+}
+#portfolio .articles:first-of-type {
+  padding-top: 0 !important;
+}
+/*==========  services  ==========*/
+#services .order {
+  display: inline-block;
+  padding: 80px 0 0;
+}
+#services .order .cards {
+  display: inline-block;
+  position: relative;
+  padding: 30px 30px 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #0a100f;
+}
+#services .order .cards p {
+  text-align: left;
+}
+#services .order .cards h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 34px;
+  color: #87949e;
+  font-family: "ACLineRegular";
+}
+#services .order .cards h4 {
+  color: #17daa3;
+  font-size: 60px;
+  text-align: left;
+  font-family: "RalewayExtraLight";
+}
+#services .order .cards button.buy-in {
+  width: 100%;
+  border: 1px solid #576671;
+  border-radius: 5px;
+  color: #87949e;
+  font-size: 40px;
+}

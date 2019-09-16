@@ -1,0 +1,237 @@
+@import "mixins"
+
+a
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+a:hover
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+a:focus
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+a:visited
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+input,textarea 
+	text-decoration: none
+	outline: none
+	outline-style: none
+	border: none
+button
+	background-color: transparent
+	outline-style: none
+	border: none
+button:hover
+	background-color: transparent
+	outline-style: none
+button:focus
+	background-color: transparent
+	outline-style: none
+.parallax-container
+	height: 500px
+	width: 100%
+.no-gutter > [class*='col-']
+	padding-right: 0
+	padding-left: 0
+
+.left
+	float: left
+.right
+	float: right
+
+section
+	padding: 65px 0
+
+p 
+	font-size: 16px
+	color: $grey
+	margin: 0 10px
+	+light
+h3 
+	text-align: center
+	font-size: 40px
+	color: $dark
+	+light
+h4
+	font-size: 18px
+	color: $dark
+	+bold
+.border
+	display: block
+	margin: 0 auto 50px
+/*==========  Header  ==========*/
+header
+	height: 100vh
+	background-image: url("../img/bg-top.jpg")
+	background-position: center center
+	background-size: cover
+	.links
+		position: relative
+		right: 10%
+		float: right
+		padding: 54px 0
+		ul
+			list-style: none
+			font-size: 0
+			padding: 0
+			margin: 0
+		li
+			display: inline-block
+			padding: 17px 20px			
+			font-size: 16px
+			border: 1px solid transparent
+			cursor: pointer
+			&:hover
+				border: 1px solid $grey
+				+flow
+	.title
+		position: absolute
+		right: 10%
+		top: 50%
+		margin-top: -50px
+/*==========  Icons  ==========*/
+#icons 
+	background-image: url("../img/bg-yelow.jpg")
+	background-position: center center
+	background-size: cover
+	h4 
+		text-transform: uppercase
+/*==========  Specials  ==========*/
+#specials 
+	h4
+		&:first-of-type
+			margin: 22px 0 5px
+		&:last-of-type
+			margin: 5px 0 22px
+/*==========  About  ==========*/
+#about
+	background-image: url("../img/bg-about.jpg")
+	background-position: center center
+	background-size: cover
+	h4
+		font-size: 20px
+/*==========  Menu  ==========*/
+
+#menu
+	ul
+		list-style: none
+		font-size: 0
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+			padding: 17px 20px			
+			font-size: 16px
+			border: 1px solid transparent
+			cursor: pointer
+			&:hover
+				border: 1px solid $grey
+				+flow
+	.list
+		display: inline-block
+		width: 100%
+		height: auto
+		padding: 18px 0
+		&:first-of-type
+			margin-top: 30px
+	p
+		padding: 0
+		margin: 0
+		font-size: 18px
+		text-transform: uppercase
+	h5
+		font-size: 14px
+		color: $grey
+		+italic
+		float: left
+		margin: 0
+		display: inline-block
+/*==========  Contacts  ==========*/
+#contacts
+	background-image: url("../img/bg-contacts.jpg")
+	background-position: center center
+	background-size: cover
+	#feedback
+		display: inline-block
+		margin-bottom: 200px
+	.send
+		border: 1px solid $grey
+		padding: 15px 28px
+		margin-top: 40px
+	h4 
+		text-transform: uppercase
+		+light
+	p
+		display: inline-block
+		margin: 10px 0	
+	input
+		width: 100%
+		border: none
+		border-bottom: 1px solid $dark
+		background-color: transparent
+		color: $grey
+		font-size: 18px
+		+italic	
+		height: 45px
+		&:first-of-type
+			margin-top: 10px
+			height: 60px
+			padding: 16px 0
+	.soc
+		display: inline-block
+		float: right
+		a
+			display: inline-block
+			border: 1px solid  $grey
+			padding: 10px 15px
+			margin: 0 5px
+		i
+			color: $grey
+			font-size: 17px
+
+/*========== Placeholder ==========*/
+input:focus
+	&::-webkit-input-placeholder
+		color: transparent	
+	&::-moz-placeholder
+		color: transparent	
+	&:-moz-placeholder
+		color: transparent	
+	&:-ms-input-placeholder
+		color: transparent
+
+*::-webkit-input-placeholder
+	color: $grey
+	font-size: 18px
+	opacity: 1
+	+italic
+
+*:-moz-placeholder
+	color: $grey
+	font-size: 18px
+	opacity: 1
+	+italic
+
+*::-moz-placeholder
+	color: $grey
+	font-size: 18px
+	opacity: 1
+	+italic
+
+*:-ms-input-placeholder
+	color: $grey
+	font-size: 18px
+	opacity: 1
+	+italic

@@ -1,0 +1,161 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+#contacts form input {
+	width: 300px;
+}
+#contacts form textarea {
+	width: 350px;
+}
+#services span {
+	height: 120px;
+	width: 120px;
+}
+#services h4 {
+	font-size: 22px;
+}
+#services a {
+	font-size: 14px;
+}
+#services .cards {
+	margin-bottom: 15px;
+}
+#services .col-md-4:last-child .cards {
+	margin-bottom: 0;
+}
+#articles h4 {
+	margin-top: 10px;
+}
+#articles #owl-arts-1, #articles #owl-arts-2 {
+	margin: 15px 0;
+}
+h3 {
+	font-size: 24px;
+	line-height: 1;
+}
+h5 {
+	font-size: 14px;
+}
+p {
+	font-size: 15px;
+}
+#contacts .flex-container {
+	flex-direction: column !important;
+}
+#contacts .flex-items {
+	margin-bottom: 25px;
+}
+#contacts .flex-items:last-child {
+	margin-bottom: 0;
+}
+#contacts form {
+	margin-bottom: 25px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+#about .col-md-6:nth-child(even) .ticket {
+	order: 1;
+	flex-direction: row;
+}
+#about .col-md-6:nth-child(2) {
+	order: 1;
+}
+#about .col-md-6:nth-child(3) {
+	order: 2;
+}
+#about .col-md-6:nth-child(4) {
+	order: 3;
+}
+#about .col-md-6:nth-child(5) {
+	order: 4;
+}
+#about .col-md-6:nth-child(6) {
+	order: 5;
+}
+#contacts .col-md-auto:first-child {
+	order: 1;
+}
+#contacts form textarea {
+	width: 100%;
+}
+#contacts form input {
+	width: 386px;
+}
+#contacts .flex-container {
+	flex-direction: row;
+	justify-content: space-between;
+}
+#contacts .flex-container.flex-items:nth-child(2) {
+	flex-grow: 1.2;
+}
+#contacts .contacts-links {
+	justify-content: center;
+}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+#contacts form input {
+	width: 100%;
+}
+section {
+	padding: 30px 0;
+}
+footer {
+	height: auto;
+}
+header img {
+	display: none;
+}
+header .left-side {
+	display: none;
+}
+header .main {
+	background-image: url(../img/top-bg.jpg);
+	background-position: center right;
+	background-size: cover;
+}
+header .col-md-6:first-child {
+	display: none;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

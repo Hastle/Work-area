@@ -1,0 +1,374 @@
+@mixin flow {
+	-webkit-transition: all .25s;
+	-o-transition: all .25s; 
+	transition: all .25s;
+}
+@mixin more-button {
+	color: #fff;
+	font-size: 13px;
+	padding: 20px 53px;
+}
+@mixin bold {
+	font-family: "PTSerifBold";
+}
+@mixin regular {
+	font-family: "PTSerifRegular";
+}
+$black: #3b3b3b;
+$orange: #ff5c2e;
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	outline-style: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+	outline: none;
+	outline-style: none;
+	color: #000;
+}
+a:focus {
+	text-decoration: none;
+	outline: none;
+	outline-style: none;
+	color: #fff;
+}
+a:visited {
+	text-decoration: none;
+	outline: none;
+	outline-style: none;
+	color: #fff;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+section {
+	display: inline-block;
+	padding: 120px 0;
+	width: 100%;
+}
+button {
+	background-color: transparent;
+	outline-style: none;
+	border: none;
+	color: #fff;
+}
+button:hover {
+	background-color: transparent;
+	outline-style: none;
+}
+button:focus {
+	background-color: transparent;
+	outline-style: none;
+}
+input {
+	outline-style: none;
+}
+input:focus {
+	outline-style: none;
+}
+input:hover {
+	outline-style: none;
+}
+.parallax-container {
+	height: 500px;
+	width: 100%;
+}
+h3 {
+	@include regular;
+	color: $black;
+	font-size: 26px;
+	padding: 35px 0;
+	margin: 0;
+}
+p {
+	@include regular;
+	font-size: 14px;
+}
+button.more {
+	@include more-button;
+	background-color: $orange;
+	display: inline-block;
+	margin: 45px 10px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	&:hover {
+		border: 1px solid $orange;
+		background-color: #fff;
+		color: $orange;
+		@include flow;
+	}
+}	
+button.much {
+	@include more-button;
+	background-color: $black;
+	opacity: 0.9;
+	display: inline-block;
+	margin: 45px 10px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	&:hover {
+		opacity: 1;
+		@include flow;
+	}		
+}
+.logo {
+	padding: 20px 0;
+	display: inline-block;
+	width: auto;
+	float: left;
+}
+/*==========  Header  ==========*/
+header {
+	display: block;
+	background-image: url(../img/bg-top.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	color: #fff;
+	.next-section {
+		position: absolute;
+		bottom: 10px;
+		@include regular;
+		font-size: 13px;
+		left: 50%;
+		margin-left: -65px;
+		p {
+			color: #fff;
+		}
+		img {
+			display: inline;
+		}
+	}
+	.review {
+		position: relative;
+		top: 25%;
+		h2 {
+			@include bold;
+			font-size: 62px;
+			text-transform: uppercase;			
+		}
+		h1 {
+			@include regular;
+			font-size: 40px;
+			span {
+				text-decoration: underline;
+			}
+		}
+	}
+	.items {
+		display: inline-block;
+		width: auto;
+		float: right;
+	}
+	ul {
+		list-style: none;
+		font-size: 0;
+		li {
+			font-size: 18px;
+			display: inline-block;
+			a {
+				padding: 20px 40px;
+				color: #fff;
+				text-transform: uppercase;
+				display: inline-block;
+				&:hover {
+					color: $orange;
+					@include flow;
+				}
+			}
+		}
+	}
+}
+/*==========  About  ==========*/
+#about {
+	background-color: #f7f7f1;
+	.col-md-6, .col-md-5, .col-md-4 {
+		padding: 0;
+	}
+	img.per {
+		width: 100%;
+	}
+	.over {
+		margin-top: -25%;
+		z-index: 10;
+
+	}
+}
+/*==========  Events  ==========*/
+#events {
+	img {
+		padding: 13px 0;
+		width: 100%;
+	}
+}
+/*==========  Reservation  ==========*/
+#reservation {
+	background-color: #f7f7f1;
+	.cards {
+		width: 100%;
+		padding: 50px 65px;
+		background-color: #fff;
+		display: inline-block;
+		box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1);
+		height: 600px;
+		h3 {
+			text-align: center;
+			padding: 25px 0;
+		}
+		.plank {
+			display: inline-block;
+			p.continue {
+				margin: 0;
+				font-size: 14px;
+				font-family: "PTSerifItalic";
+				a {
+					color: $orange;
+				}
+			}
+			h4 {
+				color: $orange;
+				font-size: 16px;
+				@include bold;
+			}
+			img.circle {
+				padding-top: 10px;
+			}
+		}
+		button.much {
+			margin: 60px 0 0;
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.form-ent {
+			display: block;
+			width: 100%;
+			font-size: 14px;			
+			color: #555;
+			background-image: none;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			background-color: #f7f7f7;
+			padding: 12px 20px;
+			display: inline-block;
+			&:focus {
+				border: 1px solid #222222;
+			}
+		}
+	}
+}
+/*==========  Reservation  ==========*/
+#social {
+	.social-networks {
+		margin: 70px 0 0;
+		button.facebook {
+			background-color: #3e59a5;
+			padding: 5px;
+			font-size: 13px;
+			border-radius: 3px;
+			margin: 0 5px;
+		}
+		button.twitter {
+			background-color: #1b95e0;
+			padding: 5px;
+			font-size: 13px;
+			border-radius: 3px;
+			margin: 0 5px;
+		}		
+	}
+}
+/*==========  Reservation  ==========*/
+footer {
+	padding: 60px 0;
+	background-color: #222222;
+	color: #fff;
+	h2 {
+		text-transform: uppercase;
+		@include bold;
+		font-size: 16px;
+	}
+	p span {
+		color: $orange;
+	}
+	img.main-pic {
+		padding-top: 20px;
+	}
+	ul.bottom-links {
+		list-style: none;
+		font-size: 0;
+		padding: 0;
+		li {
+			font-size: 18px;
+			display: inline-block;
+			a {
+				padding: 10px 10px;
+				color: #fff;
+				display: inline-block;
+				&:hover {
+					color: $orange;
+					@include flow;
+				}
+			}
+		}
+	}
+	ul#second-menu {
+		list-style: none;
+		width: auto;
+		font-size: 0;
+		padding: 0;
+		display: block;
+		li {
+			font-size: 15px;
+			a {
+				text-transform: uppercase;
+				font-family: "PTSansRegular";
+				padding: 5px;
+				color: #fff;
+				display: inline-block;
+				&:hover {
+					color: $orange;
+					@include flow;
+				}
+			}
+		}
+	}
+}
+
+/*-webkit-transition: all .25s;
+-o-transition: all .25s; 
+transition: all .25s;*/

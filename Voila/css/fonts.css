@@ -1,0 +1,33 @@
+@font-face{font-family:"RobotoRegular";src:url("../fonts/RobotoRegular/RobotoRegular.eot");src:url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:"RobotoLight";src:url("../fonts/RobotoLight/RobotoLight.eot");src:url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:"RobotoMedium";src:url("../fonts/RobotoMedium/RobotoMedium.eot");src:url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:"RobotoBold";src:url("../fonts/RobotoBold/RobotoBold.eot");src:url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:"PTSerifRegular";src:url("../fonts/PTSerifRegular/PTSerifRegular.eot");src:url("../fonts/PTSerifRegular/PTSerifRegular.eot?#iefix")format("embedded-opentype"),
+url("../fonts/PTSerifRegular/PTSerifRegular.woff") format("woff"),
+url("../fonts/PTSerifRegular/PTSerifRegular.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:"PTSerifBoldItalic";src:url("../fonts/PTSerifBoldItalic/PTSerifBoldItalic.eot");src:url("../fonts/PTSerifBoldItalic/PTSerifBoldItalic.eot?#iefix")format("embedded-opentype"),
+url("../fonts/PTSerifBoldItalic/PTSerifBoldItalic.woff") format("woff"),
+url("../fonts/PTSerifBoldItalic/PTSerifBoldItalic.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:"PTSerifItalic";src:url("../fonts/PTSerifItalic/PTSerifItalic.eot");src:url("../fonts/PTSerifItalic/PTSerifItalic.eot?#iefix")format("embedded-opentype"),
+url("../fonts/PTSerifItalic/PTSerifItalic.woff") format("woff"),
+url("../fonts/PTSerifItalic/PTSerifItalic.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:"PTSerifBold";src:url("../fonts/PTSerifBold/PTSerifBold.eot");src:url("../fonts/PTSerifBold/PTSerifBold.eot?#iefix")format("embedded-opentype"),
+url("../fonts/PTSerifBold/PTSerifBold.woff") format("woff"),
+url("../fonts/PTSerifBold/PTSerifBold.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:"PTSansRegular";src:url("../fonts/PTSansRegular/PTSansRegular.eot");src:url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
+url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"),
+url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:"PTSansItalic";src:url("../fonts/PTSansItalic/PTSansItalic.eot");src:url("../fonts/PTSansItalic/PTSansItalic.eot?#iefix")format("embedded-opentype"),
+url("../fonts/PTSansItalic/PTSansItalic.woff") format("woff"),
+url("../fonts/PTSansItalic/PTSansItalic.ttf") format("truetype");font-style:normal;font-weight:normal;}
+@font-face{font-family:"PTSansBold";src:url("../fonts/PTSansBold/PTSansBold.eot");src:url("../fonts/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"),
+url("../fonts/PTSansBold/PTSansBold.woff") format("woff"),
+url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");font-style:normal;font-weight:normal;}

@@ -1,0 +1,110 @@
+a {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000; }
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000; }
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000; }
+
+a:visited {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000; }
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+button {
+  background-color: transparent;
+  outline-style: none;
+  border: none; }
+
+button:hover {
+  background-color: transparent;
+  outline-style: none; }
+
+button:focus {
+  background-color: transparent;
+  outline-style: none; }
+
+.parallax-container {
+  height: 500px;
+  width: 100%; }
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
+section {
+  padding: 65px 0; }
+
+p {
+  font-size: 16px;
+  color: #686868;
+  margin: 0 10px;
+  font-family: "Merriweather-Light"; }
+
+h3 {
+  font-size: 20px;
+  color: #3c3c3c;
+  font-family: "Merriweather-Regular"; }
+
+h4 {
+  font-size: 18px;
+  color: #3c3c3c;
+  font-family: "Merriweather-Bold";
+  text-transform: uppercase; }
+
+/*==========  Header  ==========*/
+header {
+  height: 100vh;
+  background-image: url("../img/bg-top.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  header .links {
+    position: relative;
+    right: 10%;
+    float: right;
+    padding: 54px 0; }
+    header .links ul {
+      list-style: none;
+      font-size: 0;
+      padding: 0;
+      margin: 0; }
+    header .links li {
+      display: inline-block;
+      padding: 17px 20px;
+      font-size: 16px;
+      border: 1px solid transparent;
+      cursor: pointer; }
+      header .links li:hover {
+        border: 1px solid #686868;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
+  header .title {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    margin-top: -50px; }
+
+/*==========  Icons  ==========*/
+#icons {
+  background-image: url("../img/bg-yelow.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }

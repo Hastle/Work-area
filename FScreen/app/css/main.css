@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  outline-style: none; }
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  outline-style: none; }
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+  outline-style: none; }
+
+a:visited {
+  text-decoration: none;
+  outline: none;
+  outline-style: none; }
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+input, textarea {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  border: none; }
+
+button {
+  background-color: transparent;
+  outline-style: none;
+  border: none; }
+
+button:hover {
+  background-color: transparent;
+  outline-style: none; }
+
+button:focus {
+  background-color: transparent;
+  outline-style: none; }
+
+.parallax-container {
+  height: 100vh;
+  width: 100%; }
+
+.row-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
+.clearfix {
+  display: block;
+  content: "";
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.text-center {
+  text-align: center; }
+
+/*==========  Owl-carousel  ==========*/
+.owl-carousel .owl-nav button.owl-next {
+  right: 0;
+  position: absolute; }
+
+.owl-nav i {
+  font-size: 25px;
+  padding: 5px; }
+
+.owl-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px; }
+
+.owl-carousel button.owl-dot {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background-color: #222;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+/*==========  Slick-slider  ==========*/
+.slick-slide {
+  outline: none !important; }
+
+.slick {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0; }
+
+.slick-dots {
+  bottom: 10px; }
+
+.slick-dots li button:before {
+  font-size: 9px;
+  color: #bed1d2; }
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s; }
+
+.slick-prev {
+  left: 15px; }
+
+.slick-next {
+  right: 15px; }
+
+/*==========  Header  ==========*/
+header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url(../img/top-bg.jpg);
+  -webkit-background-size: cover;
+          background-size: cover; }
+  header .row {
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  header .main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  header span {
+    background-image: url(../img/top-bg.jpg);
+    -webkit-background-size: cover;
+            background-size: cover; }
+    header span:nth-child(1) h2 {
+      padding-top: 40px; }
+  header h2 {
+    color: #000;
+    background: #fff;
+    mix-blend-mode: lighten;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "RobotoBold";
+    margin: 0 0 0 -8px;
+    text-transform: uppercase;
+    font-size: 90px; }
+  header .flex-item:last-child {
+    background-color: #fff;
+    height: 100%; }
+  header .info {
+    display: inline-block;
+    border: 2px solid #017f35;
+    margin-left: 60px;
+    margin-top: 60px;
+    padding: 20px; }
+  header h4 {
+    font-family: "RobotoRegular";
+    color: #222;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 16px; }

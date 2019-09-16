@@ -1,0 +1,384 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+body {
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #fff;
+}
+
+a:visited {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #fff;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  display: inline-block;
+  padding: 120px 0;
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  outline-style: none;
+  border: none;
+  color: #fff;
+}
+
+button:hover {
+  background-color: transparent;
+  outline-style: none;
+}
+
+button:focus {
+  background-color: transparent;
+  outline-style: none;
+}
+
+input {
+  outline-style: none;
+}
+
+input:focus {
+  outline-style: none;
+}
+
+input:hover {
+  outline-style: none;
+}
+
+.parallax-container {
+  height: 500px;
+  width: 100%;
+}
+
+h3 {
+  font-family: "PTSerifRegular";
+  color: #3b3b3b;
+  font-size: 26px;
+  padding: 35px 0;
+  margin: 0;
+}
+
+p {
+  font-family: "PTSerifRegular";
+  font-size: 14px;
+}
+
+button.more {
+  color: #fff;
+  font-size: 13px;
+  padding: 20px 53px;
+  background-color: #ff5c2e;
+  display: inline-block;
+  margin: 45px 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+button.more:hover {
+  border: 1px solid #ff5c2e;
+  background-color: #fff;
+  color: #ff5c2e;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+button.much {
+  color: #fff;
+  font-size: 13px;
+  padding: 20px 53px;
+  background-color: #3b3b3b;
+  opacity: 0.9;
+  display: inline-block;
+  margin: 45px 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+button.much:hover {
+  opacity: 1;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+.logo {
+  padding: 20px 0;
+  display: inline-block;
+  width: auto;
+  float: left;
+}
+
+/*==========  Header  ==========*/
+header {
+  display: block;
+  background-image: url(../img/bg-top.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+header .next-section {
+  position: absolute;
+  bottom: 10px;
+  font-family: "PTSerifRegular";
+  font-size: 13px;
+  left: 50%;
+  margin-left: -65px;
+}
+header .next-section p {
+  color: #fff;
+}
+header .next-section img {
+  display: inline;
+}
+header .review {
+  position: relative;
+  top: 25%;
+}
+header .review h2 {
+  font-family: "PTSerifBold";
+  font-size: 62px;
+  text-transform: uppercase;
+}
+header .review h1 {
+  font-family: "PTSerifRegular";
+  font-size: 40px;
+}
+header .review h1 span {
+  text-decoration: underline;
+}
+header .items {
+  display: inline-block;
+  width: auto;
+  float: right;
+}
+header ul {
+  list-style: none;
+  font-size: 0;
+}
+header ul li {
+  font-size: 18px;
+  display: inline-block;
+}
+header ul li a {
+  padding: 20px 40px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+}
+header ul li a:hover {
+  color: #ff5c2e;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+/*==========  About  ==========*/
+#about {
+  background-color: #f7f7f1;
+}
+#about .col-md-6, #about .col-md-5, #about .col-md-4 {
+  padding: 0;
+}
+#about img.per {
+  width: 100%;
+}
+#about .over {
+  margin-top: -25%;
+  z-index: 10;
+}
+
+/*==========  Events  ==========*/
+#events img {
+  padding: 13px 0;
+  width: 100%;
+}
+
+/*==========  Reservation  ==========*/
+#reservation {
+  background-color: #f7f7f1;
+}
+#reservation .cards {
+  width: 100%;
+  padding: 50px 65px;
+  background-color: #fff;
+  display: inline-block;
+  box-shadow: 0 0 10px 2.4px rgba(32, 32, 32, 0.1);
+  height: 600px;
+}
+#reservation .cards h3 {
+  text-align: center;
+  padding: 25px 0;
+}
+#reservation .cards .plank {
+  display: inline-block;
+}
+#reservation .cards .plank p.continue {
+  margin: 0;
+  font-size: 14px;
+  font-family: "PTSerifItalic";
+}
+#reservation .cards .plank p.continue a {
+  color: #ff5c2e;
+}
+#reservation .cards .plank h4 {
+  color: #ff5c2e;
+  font-size: 16px;
+  font-family: "PTSerifBold";
+}
+#reservation .cards .plank img.circle {
+  padding-top: 10px;
+}
+#reservation .cards button.much {
+  margin: 60px 0 0;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+#reservation .cards .form-ent {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #555;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  padding: 12px 20px;
+  display: inline-block;
+}
+#reservation .cards .form-ent:focus {
+  border: 1px solid #222222;
+}
+
+/*==========  Reservation  ==========*/
+#social .social-networks {
+  margin: 70px 0 0;
+}
+#social .social-networks button.facebook {
+  background-color: #3e59a5;
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+#social .social-networks button.twitter {
+  background-color: #1b95e0;
+  padding: 5px;
+  font-size: 13px;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+/*==========  Reservation  ==========*/
+footer {
+  padding: 60px 0;
+  background-color: #222222;
+  color: #fff;
+}
+footer h2 {
+  text-transform: uppercase;
+  font-family: "PTSerifBold";
+  font-size: 16px;
+}
+footer p span {
+  color: #ff5c2e;
+}
+footer img.main-pic {
+  padding-top: 20px;
+}
+footer ul.bottom-links {
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+}
+footer ul.bottom-links li {
+  font-size: 18px;
+  display: inline-block;
+}
+footer ul.bottom-links li a {
+  padding: 10px 10px;
+  color: #fff;
+  display: inline-block;
+}
+footer ul.bottom-links li a:hover {
+  color: #ff5c2e;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+footer ul#second-menu {
+  list-style: none;
+  width: auto;
+  font-size: 0;
+  padding: 0;
+  display: block;
+}
+footer ul#second-menu li {
+  font-size: 15px;
+}
+footer ul#second-menu li a {
+  text-transform: uppercase;
+  font-family: "PTSansRegular";
+  padding: 5px;
+  color: #fff;
+  display: inline-block;
+}
+footer ul#second-menu li a:hover {
+  color: #ff5c2e;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+/*-webkit-transition: all .25s;
+-o-transition: all .25s; 
+transition: all .25s;*/

@@ -1,0 +1,622 @@
+@import "mixins"
+
+a
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: inherit
+a:hover
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: inherit
+a:focus
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: inherit
+a:visited
+	text-decoration: none
+	outline: none
+	outline-style: none
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+input, textarea 
+	text-decoration: none
+	outline: none
+	outline-style: none
+	border: none
+button
+	background-color: transparent
+	outline-style: none
+	border: none
+button:hover
+	background-color: transparent
+	outline-style: none
+button:focus
+	background-color: transparent
+	outline-style: none
+section
+	display: inline-block
+	width: 100%
+.parallax-container
+	height: 320px
+	background: transparent
+.no-gutter [class*='col-']
+	padding-right: 0
+	padding-left: 0
+.left
+	float: left
+.right
+	float: right
+
+a.sign
+	display: inline-block
+	margin-top: 20px
+	text-transform: uppercase
+	color: $white
+	border: 3px solid $grey
+	font-size: 24px
+	padding: 15px 40px
+	+monreg
+	&:hover
+		border: 3px solid $white
+		+flow
+
+p
+	font-size: 16px
+	color: $grey
+	+openlight
+h3
+	font-size: 18px
+	text-transform: uppercase
+	color: #000
+	margin: 40px 0
+	+monbold
+h4
+	font-size: 14px
+	text-transform: uppercase
+	color: #000
+	+monreg
+h5
+	font-size: 18px
+	+openlight
+	color: $grey
+	margin: 15px 0
+.section-title
+	margin-top: 0
+/*==========  Header  ==========*/
+header
+	height: 100vh
+	color: $white
+	.carousel-caption
+		display: inline-block
+		top: 50%
+		margin-top: -132px
+		height: auto
+		bottom: auto
+		h1
+			margin: 0
+			font-size: 72px
+			+latobold
+			text-transform: uppercase
+		p
+			margin: 0
+			color: $white
+	.carousel-inner .item img
+		height: 100vh
+		width: 100%
+	.review
+		position: absolute
+		z-index: 10
+		display: inline-block
+	ul
+		display: inline-block
+		font-size: 0
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+			a
+				display: inline-block
+				color: $white
+				padding: 15px 11px
+				font-size: 18px
+				text-transform: uppercase
+				+latobold
+				border: 1px solid transparent
+				&:hover
+					border: 1px solid  $white
+					+flow
+	.top-links
+		padding-top: 100px
+/*==========  Studio  ==========*/
+#studio
+	display: block
+	height: auto
+	background-image: url(../img/road-bg.jpg)
+	background-position: top center
+	background-size: cover
+	padding: 40px 0
+	ul,li
+		display: inline-block
+	ul
+		margin: 50px 0 0
+		padding: 0
+		font-size: 0
+		li
+			margin: 0 15px
+			a
+				display: inline-block
+				color: $white
+				padding: 15px 34px
+				text-transform: uppercase
+				font-size: 11px
+				+monreg
+				border: 1px solid $white
+				&:hover
+					border: 1px solid $yellow
+					+flow
+
+	h3,p
+		text-align: left
+	h3 
+		font-size: 30px
+		span
+			margin: 45px auto 20px
+			display: block
+			color: $white
+			font-size: 24px
+			text-align: center
+	p span
+		display: block
+		color: $white
+		font-size: 18px
+		text-align: center
+	.sign
+		margin: 45px auto
+	.card
+		padding: 45px 0
+		display: inline-block
+		h4
+			display: inline-block
+			margin: auto 5px
+/*==========  Gallery  ==========*/	
+#gallery
+	.ticket
+		height: 314px
+		display: inline-block
+		position: relative
+		overflow: hidden
+		img
+			height: 100%
+		.review
+			position: absolute
+			transform: rotateY(180deg)
+			top: 100%
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,.5)
+			opacity: 0
+			+flow
+			i
+				display: block
+				color: $white
+				font-size: 20px
+				margin: 10px 0
+			p
+				color: $white
+				+monbold
+				position: relative
+				top: 50%
+				margin: -12px 0 0
+		&:hover .review
+			top: 0
+			opacity: 1
+			transform: rotateY(0deg)
+			+flow
+/*==========  Why  ==========*/
+#why
+	padding-bottom: 110px
+	p
+		+monreg
+		font-size: 14px
+	.info
+		padding-top: 125px
+		h2
+			margin: 26px 0
+			+monbold
+			text-transform: uppercase
+			font-size: 24px
+	.card
+		display: inline-block
+		text-align: left
+		padding: 40px 0
+		cursor: pointer
+		margin-top: 20px
+		h3
+			margin: 0 0 20px
+		&:hover
+			box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2)
+			+flow
+/*==========  Stats  ==========*/
+#stats
+	height: 320px
+	h2,h3
+		color: $white
+		text-shadow: 0 1px 2px rgba(0,0,0,.6)
+	h3
+		margin: 35px 0
+	h2
+		margin: 0
+		font-size: 48px
+		+monreg
+	.bullet
+		margin-top: 69px
+/*==========  Team  ==========*/
+#team
+	padding: 90px 0
+	.faces
+		display: inline-block
+		margin-top: 80px
+	.member
+		display: inline-block
+		+flow
+		&:hover
+			transform: scale(1.05)
+			+flow
+		.descr
+			position: absolute
+			bottom: 0
+			padding: 15px
+			width: 100%
+			border-top: 1px solid $white
+			text-align: left
+			h3
+				font-size: 14px
+				color: $white
+				margin: 0
+			p
+				margin: 0
+				color: $white
+				text-transform: uppercase
+				font-size: 12px
+				+openital
+	h2
+		+monbold
+		font-size: 24px
+		text-transform: uppercase
+	p
+		font-size: 14px
+		+monreg
+	.join
+		display: inline-block
+		margin-top: 60px
+		font-size: 14px
+		+monreg
+		text-transform: uppercase
+		float: right
+		padding: 15px 50px
+		border: 1px solid #000
+		letter-spacing: 3px
+		&:hover
+			color: #fff
+			background-color: #000
+			+flow
+/*==========  Comments  ==========*/
+#comments
+	background-image: url(../img/comments-bg.jpg)
+	background-position: top center
+	background-size: cover
+	padding: 104px 0
+	display: block
+	h3,h5,p,h4
+		color: $white
+	h3
+		margin-top: 0
+	h4
+		margin: 0
+	p span
+		margin: 20px 0
+		text-transform: uppercase
+		font-size: 12px
+	.container
+		height: 100%
+	.faces
+		padding: 45px 0
+		img
+			border-radius: 100%
+			border: 5px solid transparent
+			opacity: 0.8
+			&:hover
+				opacity: 1
+				border: 5px solid $yellow
+				+flow
+		li
+			margin: 0
+			padding: 0
+			list-style: none
+	#myCarousel_2
+		height: 100%
+		ol
+			bottom: 0
+			margin-bottom: 0
+			margin-top: 0
+			li
+				border: none
+				background-color: $white
+			.active
+				background-color: $yellow
+		.carousel-inner
+			display: inline-block
+		.carousel-caption
+			position: static
+			display: inline-block
+			padding: 0
+			img
+				margin: 30px 0
+/*==========  Get  ==========*/
+.get
+	background-color: #323232
+	padding: 25px 0
+	p
+		color: $white
+		font-size: 24px
+		display: inline-block
+		float: left
+		margin: 10px
+		span
+			color: $yellow
+	.quote
+		display: inline-block
+		padding: 20px 40px
+		border: 1px solid  $white
+		color: $white
+		float: right
+		+monbold
+		text-transform: uppercase
+		font-size: 12px
+		&:hover
+			border-color: transparent
+			background-color: $grey
+			color: #000
+			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9)
+			+flow
+/*==========  Blog  ==========*/
+#blog
+	padding-top: 90px
+	.slip
+		padding: 50px 56px
+		height: 330px
+		background-color: #eaeaea
+		display: inline-block
+		&:nth-child(odd)
+			&:after
+				content: ''
+				position: absolute
+				left: -50px
+				z-index: 10
+				top: 140px
+				border: 25px solid transparent
+				border-right: 25px solid #eaeaea
+		&:nth-child(even)
+			&:before
+				content: ''
+				position: absolute
+				right: -50px
+				z-index: 10
+				bottom: 140px
+				border: 25px solid transparent
+				border-left: 25px solid #eaeaea
+		.more
+			padding: 15px 0
+			margin-top: 13px
+			display: inline-block
+		h4
+			margin: 20px 0
+			font-size: 24px
+			text-transform: none
+		p
+			margin: 0
+			+monreg
+			font-size: 13px
+			span
+				font-size: 14px
+				color: #000
+				+latoboldital
+	.content
+		display: inline-block
+		padding-top: 90px
+		text-align: left
+		img
+			height: 330px
+/*==========  Prise  ==========*/
+#price
+	padding: 90px 0
+	.moto
+		display: inline-block
+		padding: 60px 0
+		width: 100%
+		h3
+			margin-top: 0
+			margin-bottom: 0
+			display: inline-block
+			span
+				color: $grey
+				font-size: 12px
+				+openlight
+				margin: 0 5px
+	.plan
+		width: 100%
+		display: inline-block
+		border: 1px solid #ededed
+		position: relative
+		cursor: pointer
+		.buy
+			position: absolute
+			width: 60%
+			margin-left: -30%
+			left: 50%
+			bottom: -25px
+			background-color: $white
+			padding-top: 15px
+			padding-bottom: 15px
+			border: 2px solid  $dark
+			+monbold
+			font-size: 12px
+			text-transform: uppercase
+			color: $dark
+			opacity: 0
+			text-shadow: 0 1px 2px rgba(0,0,0,.6)
+			+flow-slow(0.6s)
+		h4
+			font-size: 22px
+			display: inline-block
+			span
+				font-size: 50px
+		p
+			&:last-of-type
+				display: inline-block
+				+openital
+		sup
+			top: -2em
+			margin: 0 10px
+		&:hover
+			+flow
+			box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2)
+			.buy
+				opacity: 1
+				+flow-slow(0.6s)
+/*==========  Contacts  ==========*/
+#contacts
+	p
+		margin: 9px 0
+		color: $white
+		font-size: 12px
+	#feedback
+		padding: 100px 0
+		background-color: $black
+	.send
+		border: 1px solid  $white
+		color: $white
+		background-color: transparent
+		text-transform: uppercase
+		float: right
+		+monreg
+		font-size: 14px
+		padding: 15px 30px
+		margin-top: 40px
+	.form
+		margin-top: 80px
+		display: inline-block
+		width: 100%
+		input,textarea
+			width: 100%
+			border: none
+			border-bottom: 1px solid #616161
+			background-color: transparent
+			color: #fff
+			font-size: 18px
+			+openital
+			padding: 20px 5px
+		textarea
+			height: 155px
+			resize: none
+			
+/*==========  Footer  ==========*/
+footer
+	padding-top: 40px
+	background-color: #202020
+	[class*='col-']
+		border-left: 1px solid #2e2e2e
+		&:first-child
+			border: none
+	p
+		+monreg
+		margin-top: 20px
+		a
+			&:hover
+				text-decoration: underline
+				+flow
+	h3
+		margi0: 0
+		color: #fff
+		font-size: 12px
+		+monreg
+		span
+			color: $yellow
+	ul
+		padding: 0
+		margin: 0
+		display: block
+		li
+			display: block
+		p
+			text-transform: uppercase
+			cursor: pointer
+			font-size: 13px
+			&:hover
+				color: $yellow
+				+flow
+	.soc
+		padding: 30px 0
+		display: inline-block
+		width: 100%
+		p
+			display: inline-block
+			font-size: 11px
+			margin: 7px 0
+			+monreg
+			text-transform: uppercase
+			color: #3a3a3a
+			float: left
+			a
+				text-decoration: underline
+		.links
+			display: inline-block
+			float: right
+			i
+				display: inline-block
+				color: #909090
+			a
+				display: inline-block
+				padding: 7px 10px
+				border: 1px solid transparent
+				&:hover
+					border: 1px solid #fff
+					+flow
+					i
+						color: #fff
+						+flow
+
+
+/*==========  Placeholder  ==========*/
+*::-webkit-input-placeholder
+	color: $white
+	font-size: 14px
+	opacity: 1
+	+openital
+	text-transform: uppercase
+
+*:-moz-placeholder
+	color: $white
+	font-size: 14px
+	opacity: 1
+	+openital
+	text-transform: uppercase
+
+*::-moz-placeholder
+	color: $white
+	font-size: 14px
+	opacity: 1
+	+openital
+	text-transform: uppercase
+
+*:-ms-input-placeholder
+	color: $white
+	font-size: 14px
+	opacity: 1
+	+openital
+	text-transform: uppercase

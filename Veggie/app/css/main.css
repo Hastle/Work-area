@@ -1,0 +1,265 @@
+a {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000; }
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000; }
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000; }
+
+a:visited {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000; }
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+input, textarea {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  border: none; }
+
+button {
+  background-color: transparent;
+  outline-style: none;
+  border: none; }
+
+button:hover {
+  background-color: transparent;
+  outline-style: none; }
+
+button:focus {
+  background-color: transparent;
+  outline-style: none; }
+
+.parallax-container {
+  height: 500px;
+  width: 100%; }
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+section {
+  padding: 65px 0; }
+
+p {
+  font-size: 16px;
+  color: #686868;
+  margin: 0 10px;
+  font-family: "Merriweather-Light"; }
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  color: #3c3c3c;
+  font-family: "Merriweather-Light"; }
+
+h4 {
+  font-size: 18px;
+  color: #3c3c3c;
+  font-family: "Merriweather-Bold"; }
+
+.border {
+  display: block;
+  margin: 0 auto 50px; }
+
+/*==========  Header  ==========*/
+header {
+  height: 100vh;
+  background-image: url("../img/bg-top.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  header .links {
+    position: relative;
+    right: 10%;
+    float: right;
+    padding: 54px 0; }
+    header .links ul {
+      list-style: none;
+      font-size: 0;
+      padding: 0;
+      margin: 0; }
+    header .links li {
+      display: inline-block;
+      padding: 17px 20px;
+      font-size: 16px;
+      border: 1px solid transparent;
+      cursor: pointer; }
+      header .links li:hover {
+        border: 1px solid #686868;
+        -webkit-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s; }
+  header .title {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    margin-top: -50px; }
+
+/*==========  Icons  ==========*/
+#icons {
+  background-image: url("../img/bg-yelow.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  #icons h4 {
+    text-transform: uppercase; }
+
+/*==========  Specials  ==========*/
+#specials h4:first-of-type {
+  margin: 22px 0 5px; }
+
+#specials h4:last-of-type {
+  margin: 5px 0 22px; }
+
+/*==========  About  ==========*/
+#about {
+  background-image: url("../img/bg-about.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  #about h4 {
+    font-size: 20px; }
+
+/*==========  Menu  ==========*/
+#menu ul {
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0; }
+  #menu ul li {
+    display: inline-block;
+    padding: 17px 20px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    cursor: pointer; }
+    #menu ul li:hover {
+      border: 1px solid #686868;
+      -webkit-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s; }
+
+#menu .list {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 18px 0; }
+  #menu .list:first-of-type {
+    margin-top: 30px; }
+
+#menu p {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+#menu h5 {
+  font-size: 14px;
+  color: #686868;
+  font-family: "Merriweather-LightItalic";
+  float: left;
+  margin: 0;
+  display: inline-block; }
+
+/*==========  Contacts  ==========*/
+#contacts {
+  background-image: url("../img/bg-contacts.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  #contacts #feedback {
+    display: inline-block;
+    margin-bottom: 200px; }
+  #contacts .send {
+    border: 1px solid #686868;
+    padding: 15px 28px;
+    margin-top: 40px; }
+  #contacts h4 {
+    text-transform: uppercase;
+    font-family: "Merriweather-Light"; }
+  #contacts p {
+    display: inline-block;
+    margin: 10px 0; }
+  #contacts input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #3c3c3c;
+    background-color: transparent;
+    color: #686868;
+    font-size: 18px;
+    font-family: "Merriweather-LightItalic";
+    height: 45px; }
+    #contacts input:first-of-type {
+      margin-top: 10px;
+      height: 60px;
+      padding: 16px 0; }
+  #contacts .soc {
+    display: inline-block;
+    float: right; }
+    #contacts .soc a {
+      display: inline-block;
+      border: 1px solid #686868;
+      padding: 10px 15px;
+      margin: 0 5px; }
+    #contacts .soc i {
+      color: #686868;
+      font-size: 17px; }
+
+/*========== Placeholder ==========*/
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+input:focus::-moz-placeholder {
+  color: transparent; }
+
+input:focus:-moz-placeholder {
+  color: transparent; }
+
+input:focus:-ms-input-placeholder {
+  color: transparent; }
+
+*::-webkit-input-placeholder {
+  color: #686868;
+  font-size: 18px;
+  opacity: 1;
+  font-family: "Merriweather-LightItalic"; }
+
+*:-moz-placeholder {
+  color: #686868;
+  font-size: 18px;
+  opacity: 1;
+  font-family: "Merriweather-LightItalic"; }
+
+*::-moz-placeholder {
+  color: #686868;
+  font-size: 18px;
+  opacity: 1;
+  font-family: "Merriweather-LightItalic"; }
+
+*:-ms-input-placeholder {
+  color: #686868;
+  font-size: 18px;
+  opacity: 1;
+  font-family: "Merriweather-LightItalic"; }

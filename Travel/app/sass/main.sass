@@ -1,0 +1,261 @@
+@import "mixins"
+
+a
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: #000
+a:hover
+	text-decoration: none
+	outline: none
+	outline-style: none
+	color: inherit
+a:focus
+	text-decoration: none
+	outline: none
+	outline-style: none
+a:visited
+	text-decoration: none
+	outline: none
+	outline-style: none
+img
+	display: inline-block
+	max-width: 100%
+	height: auto
+input, textarea 
+	text-decoration: none
+	outline: none
+	outline-style: none
+	border: none
+button
+	background-color: transparent
+	outline-style: none
+	border: none
+button:hover
+	background-color: transparent
+	outline-style: none
+button:focus
+	background-color: transparent
+	outline-style: none
+.parallax-container
+	height: 500px
+	width: 100%
+.no-gutter > [class*='col-']
+	padding-right: 0
+	padding-left: 0
+.row-flex 
+	display: flex
+	flex-flow: row wrap
+.left
+	float: left
+.right
+	float: right
+section
+	display: block
+	padding: 100px 0
+h2
+	font-size: 62px
+	+bold
+	text-transform: uppercase
+	margin: 50px 0
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6)
+h3
+	font-size: 28px
+	text-transform: uppercase
+	color: $green
+	+bold
+	text-align: center
+	margin: 0
+	&:after
+		content: url(../img/line.png)
+		display: block
+		margin-top: 14px
+h5
+	font-size: 15px
+	+lato
+	color: $dark
+p
+	font-size: 14px
+	color: $grey
+	+arial
+.action
+	+more-button
+	border: 3px transparent solid
+	&:hover
+		+flow
+		background-color: #fff
+		color: $green
+		border: 3px $green solid
+/*==========  Slick-slider  ==========*/
+.slick-slide
+	outline: none !important
+.slick
+	height: auto
+	overflow: hidden
+	position: relative
+	width: 100%
+.slick-dotted.slick-slider
+	margin-bottom: 0
+.slick-dots
+	bottom: 10px
+.slick-dots li button:before
+	font-size: 9px
+	color: #bed1d2
+.slick-dots li.slick-active button:before
+	color: #fff
+	+flow
+.slick-prev
+	left: 15px
+.slick-next
+	right: 15px
+/*==========  Header  ==========*/
+header
+	width: 100%
+	height: 100vh
+	overflow: hidden
+	display: block
+	color: #fff
+	.descr
+		width: 100%
+		padding: 0 200px
+		margin: 0 auto
+		p
+			color: #fff
+			font-size: 22px
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6)
+		.action
+			margin-top: 80px
+	.img-item
+		background-position: center center
+		background-size: cover
+		height: 100vh
+		display: grid !important
+		position: relative
+		align-content: center
+		text-align: center
+	.img-1
+		background-image: url(../img/bg-top-1.jpg);
+	.img-2
+		background-image: url(../img/bg-top-2.jpg);
+	.img-3
+		background-image: url(../img/bg-top-3.jpg);
+/*==========  Favorable  ==========*/
+#favorable
+	h5
+		margin: 0
+	.row-flex
+		margin-top: 50px
+	.ticket
+		padding: 10px 0
+		img
+			width: 100%
+/*==========  Service  ==========*/
+#service
+	padding: 0
+	.advice
+		background-color: $light
+		display: inline-block
+		padding: 50px 70px
+	.card
+		padding: 7px 15px
+	.slick,.draggable,.slick-track
+		height: 100% !important
+/*==========  Tours  ==========*/
+#tours
+	.row
+		margin-top: 60px
+	.action
+		margin-top: 50px
+		border: 3px transparent solid
+		&:hover
+			+flow
+			background-color: #fff
+			color: $green
+			border: 3px $green solid
+	.overlay
+		display: inline-block
+		position: relative
+		overflow: hidden
+		img
+			height: auto
+		.review
+			position: absolute
+			transform: scale(0.7)
+			top: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,.5)
+			opacity: 0
+			overflow: hidden
+			+flow
+		&:hover .review
+			transform: scale(1)
+			top: 0
+			opacity: 1
+			+flow
+	.col-md-3
+		padding-top: 15px
+		padding-bottom: 15px
+/*==========  Contacts  ==========*/
+#contacts
+	background-color: $light
+	h3
+		color: $grey
+		&:after
+			display: none
+	.enter
+		display: inline-block
+		border: 1px solid  $acent
+		margin-top: 60px
+	.info
+		padding: 40px 30px
+		border-right: 1px solid  $acent
+	.pull
+		display: inline-block
+		i
+			color: $orange
+			margin-right: 10px
+	.soc-links
+		padding: 15px 0
+		a
+			background-color: $acent
+			border-radius: 5px
+			display: inline-grid
+			height: 40px
+			width: 40px
+			text-align: center
+			align-content: center
+			margin: 0 5px
+		i
+			font-size: 30px
+			color: #fff
+	form
+		display: inline-block
+		width: 100%
+		padding: 35px 20px
+		text-align: center
+		i
+			margin-left: 30px
+		.action
+			margin-top: 25px
+		.form-ent,textarea
+			display: inline-block
+			color: $grey
+			width: 100%
+			padding: 15px 10px
+			resize: none
+			background-color: transparent
+			border: 1px solid transparent
+			border-bottom: 1px solid  $acent
+			+placeholder
+				+lato
+				font-size: 14px
+				color: $grey
+			&:focus
+				border: 1px solid $acent
+				+placeholder
+					color: transparent
+					+flow-slow(.5s)
+				+flow-slow(.5s)
+		textarea
+			height: 140px

@@ -1,0 +1,38 @@
+$green: #59c45a
+$grey: #959595
+$dark: #3c3c3c
+$light: #efeeee
+$acent: #c9c9c9
+$orange: #ed7e01
+
+=flow
+	transition: all .25s
+=flow-slow($sec)
+	transition: all $sec
+=placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+=bold
+	font-family: "UTMAvo"
+=latobold
+	font-family: "LatoBold"
+=arial
+	font-family: "ArialRegular"
+=lato
+	font-family: "LatoRegular"
+=more-button
+	color: #fff
+	background-color: $green
+	display: inline-block
+	font-size: 20px
+	text-transform: uppercase
+	+latobold
+	border-radius: 5px
+	box-shadow: 0px 0px 35px 0px rgba(89, 196, 90, 0.65)
+	padding: 20px 45px

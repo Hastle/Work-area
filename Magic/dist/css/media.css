@@ -1,0 +1,237 @@
+/*==========  Desktop First Method  ==========*/
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 769px) {
+	h3 {
+		margin: 25px 0;
+	}
+	#blog .slip:nth-child(even):before {
+		display: none;
+	}
+	#blog .slip:nth-child(odd):after {
+		display: none;
+	}
+	header .carousel-caption h1 {
+		font-size: 50px;
+	}
+	header ul {
+		display: none;
+	}
+	header .top-links {
+		padding-top: 20px;
+	}
+	#studio ul {
+		margin-top: 25px;
+		text-align: left;
+	}
+	#studio ul li {
+		margin: 0 13px;
+	}
+	#studio ul li a {
+		padding: 15px 25px;
+	}
+	#studio .card {
+		padding: 20px 0;
+	}
+	#studio h3 {
+		margin-top: 0;
+	}
+	#studio .sign {
+		margin: 20px auto;
+	}
+	#studio h3 span {
+		margin-top: 20px;
+	}
+	#gallery .ticket {
+		height: auto;
+	}
+	#gallery .ticket img {
+		width: 100%;
+	}
+	#why .info {
+		padding-top: 40px;
+	}
+	#why {
+		padding-bottom: 50px;
+	}
+	#why .card {
+		padding: 20px 0;
+	}
+	#team {
+		padding: 40px 0;
+	}
+	#team .faces {
+		margin-top: 20px;
+	}
+	#team .join {
+		float: none;
+		margin-top: 40px;
+	}
+	#comments {
+		padding: 40px 0;
+	}
+	.get p {
+		margin: 10px 0;
+		text-align: center;
+		float: none;
+		display: block;
+	}
+	.get .quote {
+		float: none;
+		margin: 15px auto 0;
+	}
+	#blog .content img {
+		display: block;
+		margin: 0 auto;
+		height: auto;
+	}
+	#blog .content {
+		padding-top: 20px;
+	}
+	#price {
+		padding-top: 40px;
+	}
+	#price .moto {
+		padding: 20px 0;
+	}
+	#price .plan {
+		margin-bottom: 30px;
+	}
+	#contacts {
+		padding-top: 40px;
+	}
+	#contacts #feedback {
+		margin-top: 30px;
+		padding: 40px 0;
+	}
+	#feedback .col-sm-4,.col-md-4,.col-md-12 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#contacts .form {
+		margin-top: 20px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	#contacts .col-xs-8 {
+		margin-top: 20px;
+	}
+	#contacts .col-xs-4 {
+		margin-top: 10px;
+	}
+	#blog .slip {
+		padding: 20px;
+		height: auto;
+	}
+	#team [class*='col-'] {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	#team .member {
+		margin-top: 20px;
+	}
+	header .carousel-caption h1 {
+		font-size: 25px;
+	}
+	#studio .card h4 {
+		color: #fff;
+	}
+	a.sign {
+		padding: 10px 20px;
+		font-size: 20px;
+		margin-top: 30px;
+	}
+	footer ul {
+		text-align: center;
+	}
+	footer [class*='col-'] {
+		padding-left: 0;
+		padding-right: 0;
+		border: none;
+	}
+	#comments .col-xs-12,.col-xs-4 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#price .container [class*='col-'] {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	#stats h2 {
+		font-size: 21px;
+	}
+	#stats h3 {
+		margin: 10px auto;
+	}
+	#stats .bullet {
+		margin-top: 30px;
+	}
+	footer .soc .links a {
+		padding: 0 15px;
+	}
+	footer .soc .links {
+		margin: 15px auto;
+		float: none;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

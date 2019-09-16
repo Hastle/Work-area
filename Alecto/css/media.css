@@ -1,0 +1,30 @@
+@media only screen and (max-width:1200px){}
+@media only screen and (max-width:992px){.articles{padding:0;}
+.promo-icon{margin:20px auto 0;}
+.matter{margin-top:20px;padding:60px 40px;}
+.order{padding:50px 0;}
+.affiliate h3{padding:35px 0;text-align:center;}
+.for-slide{height:300px !important;}
+#myCarousel1{height:300px !important;}
+.overview p{font-size:13px;}
+.overview h5{font-size:25px;padding:0;}
+#myCarousel1 .carousel-caption{top:0;}
+#myCarousel1 .carousel-indicators{bottom:0;}
+}
+@media only screen and (max-width:768px){h3{font-size:40px;padding-top:40px;}
+p{font-size:15px;}
+.promo img{height:400px !important;}
+.affiliate{padding:0;}
+}
+@media only screen and (max-width:480px){#myCarousel .carousel-indicators{padding-bottom:20px;}
+#myCarousel .carousel-caption{position:absolute;top:0%;}
+.review{top:25%;}
+.review a.top-more{display:inline;}
+.review a.top-more button{margin-top:20px;}
+}
+@media only screen and (max-width:320px){}
+@media only screen and (min-width:320px){}
+@media only screen and (min-width:480px){}
+@media only screen and (min-width:768px){}
+@media only screen and (min-width:992px){}
+@media only screen and (min-width:1200px){}

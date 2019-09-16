@@ -1,0 +1,29 @@
+@media only screen and (max-width:1200px){#about .over{margin-top:0;}
+#about .col-sm-12 .col-sm-6{padding:0;}
+#about .col-sm-12 img{padding:15px;}
+}
+@media only screen and (max-width:992px){}
+@media only screen and (max-width:768px){#reservation .cards{margin-bottom:10px;padding:10px 0;height:auto;}
+form{padding:0 10px;}
+section{padding:60px 0;}
+footer{padding:0;}
+footer ul.bottom-links{text-align:center;}
+button.more{margin:45px 10px 0;}
+#about img{width:100%;}
+#about>.col-md-4{padding:0 15px;}
+}
+@media only screen and (max-width:480px){header .review h2{font-size:40px;}
+header .review h1{font-size:20px;}
+header .more{padding:10px 30px;}
+header .much{padding:10px 30px;}
+h3{padding:0 0 35px;}
+#about img:first-child{padding:15px 0 0;}
+#events h3{padding:35px 0;}
+#events .food-block{padding:0;}
+}
+@media only screen and (max-width:320px){}
+@media only screen and (min-width:320px){}
+@media only screen and (min-width:480px){}
+@media only screen and (min-width:768px){}
+@media only screen and (min-width:992px){}
+@media only screen and (min-width:1200px){}

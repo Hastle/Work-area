@@ -1,0 +1,626 @@
+body {
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 16px;
+  background-color: #f3f3f3;
+  padding: 35px;
+}
+
+section, footer {
+  background-color: #fbfbfb;
+  border-top: 35px solid #f3f3f3;
+  padding: 130px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+input, textarea {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000;
+}
+
+a:visited {
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: #000;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: transparent;
+  outline-style: none;
+  border: none;
+}
+
+button:hover {
+  background-color: transparent;
+  outline-style: none;
+}
+
+button:focus {
+  background-color: transparent;
+  outline-style: none;
+}
+
+.parallax-container {
+  width: 100%;
+  height: -moz-calc(100vh - 35px);
+  height: calc(100vh - 35px);
+}
+
+.no-gutter [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+h4 {
+  color: #1a2631;
+  font-size: 45px;
+  padding: 45px 0;
+  font-family: "BaronNeue";
+}
+
+h5 {
+  color: #1a2631;
+  font-size: 14px;
+  font-family: "BaronNeue";
+}
+
+h3 {
+  color: #000;
+  font-size: 38px;
+  font-family: "BaronNeue";
+  text-align: center;
+}
+
+p {
+  color: #7e7e7e;
+  font-size: 17px;
+  font-family: "AzkidenzGroteskPro";
+}
+
+.shadow {
+  text-shadow: rgb(215, 215, 215) 0px 0px 1px, rgb(217, 217, 217) 1px 1px 1px, rgb(219, 219, 219) 2px 2px 1px, rgb(221, 221, 221) 3px 3px 1px, rgb(223, 223, 223) 4px 4px 1px, rgb(225, 225, 225) 5px 5px 1px, rgb(227, 227, 227) 6px 6px 1px, rgb(229, 229, 229) 7px 7px 1px, rgb(231, 231, 231) 8px 8px 1px, rgb(233, 233, 233) 9px 9px 1px, rgb(235, 235, 235) 10px 10px 1px, rgb(237, 237, 237) 11px 11px 1px, rgb(239, 239, 239) 12px 12px 1px, rgb(241, 241, 241) 13px 13px 1px, rgb(243, 243, 243) 14px 14px 1px, rgb(245, 245, 245) 15px 15px 1px, rgb(247, 247, 247) 16px 16px 1px, rgb(249, 249, 249) 17px 17px 1px, rgb(251, 251, 251) 18px 18px 1px, rgb(253, 253, 253) 19px 19px 1px;
+}
+
+.cbalink {
+  display: none !important;
+}
+/*==========  MixItUp  ==========*/
+.item-filter {
+  display: none;
+  padding: 0;
+}
+.item-filter img {
+  width: 100%; 
+  height: auto;
+}
+/*==========  Menu  ==========*/
+.toggleMenu {
+  bd
+  margin-top: 7px;
+  right: 55px;
+  background-color: white;
+  height: 108px;
+  width: 74px;
+  outline: none;
+  position: fixed;
+  z-index: 200;
+  border: 1px solid  #000;
+}
+.toggleMenu:hover {
+  background-color: #fff;
+}
+.toggleMenu:visited {
+  background-color: #fff;
+}
+.toggleMenu:focus {
+  background-color: #fff;
+}
+.toggleMenu:before {
+  right: 7px;
+  background-color: white;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -7px;
+  border: 2px solid white;
+  z-index: 100;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.sandwich {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 46px;
+  margin-left: 20px;
+  z-index: 200;
+}
+.swPattern, .swTopper, .swBottom, .swFooter {
+  position: absolute;
+  right: 0px;
+  width: 30px;
+  height: 3px;
+  background: black;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.4s, top 0.2s;
+}
+.swTopper {
+  top: 0;
+}
+.swBottom {
+  top: 6.9px;
+  transition-delay: 0.2s, 0s;
+}
+.swFooter {
+  top: 13.5px;
+  transition: all 0.4s;
+  transition-delay: 0.1s;
+}
+.toggleMenu.active .swTopper {
+  top: 5px;
+  transform: rotate(135deg);
+}
+.toggleMenu.active .swBottom {
+  top: 5px;
+  transform: rotate(-135deg);
+}
+.toggleMenu.active .swFooter {
+  opacity: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+.mainMenu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  right: 0;
+  top: 0;
+  display: none;
+  text-align: center;
+}
+.mainMenu ul, .mainHead .mainMenu li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+.mainMenu ul {
+  margin-top: 150px;
+}
+.mainMenu li {
+  text-transform: uppercase;
+  transition: all 0.4s;
+  font-weight: bold;
+}
+.mainMenu li:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+.mainMenu a {
+  display: block;
+  padding: 15px 0px;
+  color: #ffffff;
+}
+.mainMenu li:nth-child(1) a {
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+.mainMenu li:nth-child(2) a {
+  -webkit-animation-duration: 0.6s;
+  -moz-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
+.mainMenu li:nth-child(3) a {
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+.mainMenu li:nth-child(4) a {
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+}
+.mainMenu li:nth-child(5) a {
+  -webkit-animation-duration: 0.9s;
+  -moz-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+}
+.mainMenu li:nth-child(6) a {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+/*==========  Header  ==========*/
+.px1 {
+  position: absolute;
+  bottom: 6px;
+  left: -7px;
+  height: 1px;
+  width: 6px;
+  background-color: #000;
+}
+.px2 {
+  position: absolute;
+  top: -7px;
+  right: 6px;
+  width: 1px;
+  height: 6px;
+  background-color: #000;
+}
+header {
+  height: -moz-calc(100vh - 35px);
+  height: calc(100vh - 35px);
+}
+header .top-strip {
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+/*==========  Works  ==========*/
+#works ul {
+  display: inline-block;
+  font-size: 0;
+  padding: 15px 0;
+  margin: 0;
+}
+#works ul li {
+  display: inline-block;
+  font-size: 15px;
+  border-bottom: 2px solid transparent;
+  padding: 0 15px;
+  cursor: pointer;
+}
+#works ul li p {
+  font-size: 15px;
+  color: #1a2631;
+  font-family: "BaronNeue";
+  border-bottom: 2px solid transparent;
+}
+#works ul li:hover p {
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  border-bottom: 2px solid #1a2631;
+}
+#works .container li {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  width: auto;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+#works .container li .review {
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+#works .container li .review p {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  margin: -12px 0 0;
+}
+#works .container li:hover .review {
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+#works .col-md-4 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+#works img {
+  height: 100%;
+}
+#works .container {
+  padding: 0;
+}
+#img-filter [class*='col-'] {
+  min-height: 0;
+}
+/*==========  About  ==========*/
+#about h4 {
+  margin: 0;
+}
+/*==========  Bullets  ==========*/
+#bullets {
+  padding: 0;
+}
+#bullets .cards {
+  overflow: hidden;
+  padding: 40px;
+}
+#bullets .cards:nth-child(1) {
+  margin-top: 100px;
+}
+#bullets .cards p {
+  display: block;
+  font-family: "BaronNeue";
+  font-size: 14px;
+  color: #1a2631;
+  margin-top: 15px;
+}
+
+/*==========  Skills  ==========*/
+#skills .dio {
+  padding: 40px 0;
+}
+#skills .dio .basis {
+  width: 100%;
+  display: inline-block;
+  background-color: #f3f3f3;
+  margin-top: 30px;
+  height: 34px;
+}
+#skills .dio .basis .layer1, #skills .dio .basis .layer2, #skills .dio .basis .layer3 {
+  height: 34px;
+  background-color: #000000;
+}
+#skills .dio .basis .layer1 {
+  width: 95%;
+}
+#skills .dio .basis .layer2 {
+  width: 85%;
+}
+#skills .dio .basis .layer3 {
+  width: 80%;
+}
+#skills .dio .basis h5 {
+  float: right;
+  color: #fff;
+  margin: 0;
+  padding-top: 7px;
+  padding-right: 16px;
+}
+
+/*==========  Advantages  ==========*/
+#advantages {
+  background-color: #f3f3f3;
+}
+#advantages .ticket {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 50px;
+}
+#advantages .ticket h5 {
+  margin-top: 0;
+}
+
+/*==========  News  ==========*/
+#news {
+  border-top: none;
+}
+#news .col-md-4 {
+  padding: 0 12px;
+}
+#news .plate {
+  display: inline-block;
+  padding-top: 70px;
+}
+#news .plate .discr {
+  display: inline-block;
+  width: 100%;
+}
+#news .plate .info {
+  padding: 20px 5px 0;
+  display: inline-block;
+  overflow: hidden;
+}
+#news .plate .info p {
+  display: inline-block;
+  margin: 0;
+}
+#news .plate .info i {
+  color: #7e7e7e;
+}
+
+/*==========  Slider  ==========*/
+#slider {
+  padding: 0;
+  position: relative;
+}
+#slider #myCarousel .carousel-caption {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+#slider #myCarousel .carousel-caption img {
+  position: absolute;
+  top: 25%;
+  width: 30px;
+  left: 50%;
+  margin-left: -15px;
+}
+#slider #myCarousel .carousel-caption .context {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  height: 180px;
+  width: 90%;
+  margin-top: -90px;
+  margin-left: -45%;
+}
+#slider #myCarousel .carousel-caption .context h2 {
+  color: #000;
+  font-size: 21px;
+  text-shadow: none;
+}
+#slider #myCarousel .item > img {
+  height: auto;
+}
+#slider #myCarousel .carousel-indicators {
+  bottom: 25%;
+}
+#slider #myCarousel .carousel-indicators li {
+  border-radius: 0;
+  background-color: #dddddd;
+  margin: 0  16px;
+  border: none;
+}
+#slider #myCarousel .carousel-indicators .active {
+  background-color: #000;
+  height: 10px;
+  width: 10px;
+  margin: 0 16px;
+}
+
+/*==========  Contacts  ==========*/
+#contacts #feedback {
+  display: inline-block;
+  margin-top: 80px;
+  width: 100%;
+}
+#contacts #feedback .form-ent, #contacts #feedback textarea {
+  width: 100%;
+  background-color: #efefef;
+  padding: 20px 35px;
+  color: #c6c6c6;
+  font-size: 17px;
+  font-family: "FuturaPTHeavy";
+}
+#contacts #feedback textarea {
+  height: 315px;
+  resize: none;
+}
+#contacts #feedback .send {
+  padding: 15px 35px;
+  color: #838383;
+  font-size: 14px;
+  opacity: 1;
+  font-family: "BaronNeueBold";
+  border: 1px solid transparent;
+  text-shadow: rgb(215, 215, 215) 0px 0px 1px, rgb(217, 217, 217) 1px 1px 1px, rgb(219, 219, 219) 2px 2px 1px, rgb(221, 221, 221) 3px 3px 1px, rgb(223, 223, 223) 4px 4px 1px, rgb(225, 225, 225) 5px 5px 1px, rgb(227, 227, 227) 6px 6px 1px, rgb(229, 229, 229) 7px 7px 1px, rgb(231, 231, 231) 8px 8px 1px, rgb(233, 233, 233) 9px 9px 1px, rgb(235, 235, 235) 10px 10px 1px, rgb(237, 237, 237) 11px 11px 1px, rgb(239, 239, 239) 12px 12px 1px, rgb(241, 241, 241) 13px 13px 1px, rgb(243, 243, 243) 14px 14px 1px, rgb(245, 245, 245) 15px 15px 1px, rgb(247, 247, 247) 16px 16px 1px, rgb(249, 249, 249) 17px 17px 1px, rgb(251, 251, 251) 18px 18px 1px, rgb(253, 253, 253) 19px 19px 1px;
+}
+#contacts #feedback .send:hover {
+  border: 1px solid  #838383;
+  text-shadow: none;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+/*========== Footer ==========*/
+footer {
+  padding: 0;
+}
+footer .links {
+  display: inline-block;
+  padding: 30px 0;
+  width: 280px;
+}
+footer .links i {
+  padding: 10px;
+}
+footer .top {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -20px;
+  height: 40px;
+  width: 40px;
+  background-color: #1a2631;
+}
+footer .top i {
+  margin-top: 12px;
+  color: #fff;
+}
+
+/*========== Placeholder ==========*/
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+*::-webkit-input-placeholder {
+  color: #c6c6c6;
+  font-size: 14px;
+  opacity: 1;
+  font-family: "BaronNeueBold";
+}
+
+*:-moz-placeholder {
+  color: #c6c6c6;
+  font-size: 14px;
+  opacity: 1;
+  font-family: "BaronNeueBold";
+}
+
+*::-moz-placeholder {
+  color: #c6c6c6;
+  font-size: 14px;
+  opacity: 1;
+  font-family: "BaronNeueBold";
+}
+
+*:-ms-input-placeholder {
+  color: #c6c6c6;
+  font-size: 14px;
+  opacity: 1;
+  font-family: "BaronNeueBold";
+}
